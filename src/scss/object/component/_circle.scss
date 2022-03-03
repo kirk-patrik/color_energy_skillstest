@@ -1,0 +1,46 @@
+.c-circle {
+  &01,
+  &02,
+  &03 {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto Slab;
+    font-weight: 700;
+    flex-direction: column;
+  }
+  &02 {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background: $color-primary;
+    top: -46px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    padding-bottom: 5px;
+    @include is-responsive {
+        width: 81px;
+        height: 81px;
+        padding-bottom: 0;
+    }
+    span {
+        @include font-line(12, 12);
+        letter-spacing: .03em;
+        @include is-responsive {
+            @include font-line(11, 11);
+        }
+    }
+    & span:last-child {
+        @include font-line(34, 34);
+        letter-spacing: .06em;
+        display: block;
+        padding-top: 5px;
+        @include is-responsive {
+            @include font-line(32, 32);
+        }
+    }
+  }
+}

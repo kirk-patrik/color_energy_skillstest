@@ -1,0 +1,149 @@
+@import "../core/mixins/*";
+@import "../core/root/_variables";
+.sect_4 {
+  background-color: #f8f8f8;
+  padding: 100px 0 0;
+  &__header {
+      p:first-child {
+         margin-bottom: 13px;
+      }
+  }
+  &__header_sub {
+    margin: 20px 0 40px;
+    @include is-responsive {
+        margin: 10px 0 29px;
+        & p:first-child {
+            br {
+                display: none;
+            }
+        }
+    }
+  }
+  .flow {
+    &__frame {
+      margin: 0 auto;
+      max-width: 890px;
+      img {
+        transform: rotate(-90deg);
+        margin: 112px 0 0;
+        width: 100%;
+        height: auto;
+        @include is-responsive {
+            transform: unset;
+            margin-top: 0;
+        }
+      }
+    }
+    &__cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 980px;
+      margin: 180px auto 0;
+      position: relative;
+      flex-wrap: wrap;
+      @include is-responsive {
+        margin: 69.7px auto 0;
+      }
+    }
+    &__type {
+      max-width: 310px;
+      border: 6px solid $color-primary;
+      border-radius: 20px;
+      padding: 61px 25px 37px;
+      position: relative;
+      @include is-max(1200px) {
+        max-width: 48%;
+        &:last-child {
+          margin-top: 72px;
+        }
+      }
+      @include is-responsive {
+        max-width: 100%;
+        margin-top: 57px;
+        padding: 58px 25px 26px;
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          margin-top: 57px;
+        }
+      }
+      &:first-child {
+        .icon {
+          img {
+            width: 29.14px;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .icon {
+          img {
+            width: 40.47px;
+          }
+        }
+      }
+      &:last-child {
+        .icon {
+          img {
+            width: 28px;
+          }
+        }
+      }
+      p {
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+      & p:nth-child(2) {
+        @include font-line(14, 14);
+        text-align: center;
+        @include is-responsive {
+          @include font-line(12, 12);
+        }
+      }
+      & p:nth-child(3) {
+        @include font-line(22, 22);
+        letter-spacing: 0;
+        white-space: nowrap;
+        margin: 17px 0 0;
+        text-align: center;
+        @include is-max(1200px) {
+          white-space: unset;
+        }
+        @include is-responsive {
+          @include font-line(20, 20);
+        }
+      }
+      & p:last-child {
+        @include font-line(15, 26);
+        font-weight: 500;
+        @include is-responsive {
+          @include font-line(12, 20);
+        }
+      }
+      .icon {
+        text-align: center;
+        position: relative;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before,
+        &::after {
+          content: "";
+          height: 3px;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 86px;
+          background: $color-primary;
+        }
+        &::after {
+          right: 0;
+          left: unset;
+        }
+      }
+    }
+  }
+}

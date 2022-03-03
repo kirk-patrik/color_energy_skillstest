@@ -1,24 +1,91 @@
 .c-heading {
   &01 {
-    border-left: 5px solid #229fe7;
-    margin-bottom: 50px;
-    padding: 0 10px;
-    text-align: left;
+    font-weight: 700;
+    font-family: "Quicksand";
+    line-height: 1;
+    text-align: center;
     &__main {
-      color: #202020;
-      @include font-line(130, 130);
-      font-weight: 700;
+      @include font-line(22, 22);
+      letter-spacing: 0.06em;
       @include is-responsive {
-        @include font-line(65, 65);
+        @include font-line(16, 16);
       }
     }
     &__sub {
-      color: #5b6060;
-      @include font-line(20, 20);
-      font-weight: 700;
-      padding-left: 10px;
+      @include font-line(36, 87);
+      letter-spacing: 0.064em;
       @include is-responsive {
-        @include font-line(16, 16);
+        @include font-line(26, 45);
+      }
+      &--line {
+        position: relative;
+        &::after,
+        &::before {
+          background-color: $color-primary-alt;
+          content: "";
+          height: 1px;
+          width: 15%;
+          display: block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &::after {
+          right: 0;
+        }
+      }
+      .yellow,
+      .blue {
+        position: relative;
+        &::before {
+          content: "";
+          height: 8px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: $color-secondary;
+          opacity: .5;
+        }
+      }
+      .blue {
+        &::before {
+          background-color: $color-tertiary;
+        }
+      }
+      .isCircle {
+        span {
+          position: relative;
+          display: inline-block;
+          &::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 17%;
+            border: 2px solid #707070;
+            @include is-responsive {
+              top: 0%;
+            }
+          }
+        }
+      }
+    }
+  }
+  &02 {
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    &__main {
+      @include font-line(15, 26);
+      letter-spacing: .06em;
+      @include is-responsive {
+        text-align: left;
+        @include font-line(12, 20);
+        padding: 0 14px;
       }
     }
   }
