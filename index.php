@@ -115,5 +115,25 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
         </div>
     </div>
 </section>
+<section class="sect_7" id="sect_7">
+    <div class="l-wrap">
+        <div class="sect_7__main_content">
+            <div class="content01">
+                <div class="row">
+                    <p class="col1">暑さには、発汗対策を忘れずに。</p>
+                    <div class="col2">
+                        <p>すばやい水分と電解質の補給を。</p>
+                        <p>クラシエの <span>経口補水液</span></p>
+                    </div>
+                    <img src="<?= resource('img', 'raw/sect_7-img01.png') ?>" alt="">
+                </div>
+            </div>
+            <div class="content02">
+                <img class="u-d-n-responsive" src="<?= resource('img', 'raw/sect_7-img02.png') ?>" alt="">
+                <img class="u-d-n-laptop" src="<?= resource('img', 'raw/sect_7-img02-sp.png') ?>" alt="">
+            </div>
+        </div>
+    </div>
+</section>
 <?php
 includeWithVariables('includes/footer.php', ['footerJS' => ['all.js']]) ?>
