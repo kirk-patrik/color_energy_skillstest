@@ -49,24 +49,71 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
 
         ?>
         <div class="flow__cards">
-            <?php foreach($flowContent as $flow) : ?>
-            <div class="flow__type">
-                <div class="c-circle02 flow__type_number">
-                    <span>Type</span>
-                    <span><?= $flow["type"] ?></span>
+            <?php foreach ($flowContent as $flow) : ?>
+                <div class="flow__type">
+                    <div class="c-circle02 flow__type_number">
+                        <span>Type</span>
+                        <span><?= $flow["type"] ?></span>
+                    </div>
+                    <p><?= $flow["text01"] ?></p>
+                    <p><?= $flow["text02"] ?></p>
+                    <div class="icon">
+                        <img src="<?= resource('img', 'icon/') . $flow["icon"]; ?>" alt="">
+                    </div>
+                    <p><?= $flow["text03"] ?></p>
                 </div>
-                <p><?= $flow["text01"] ?></p>
-                <p><?= $flow["text02"] ?></p>
-                <div class="icon">
-                    <img src="<?= resource('img', 'icon/') . $flow["icon"]; ?>" alt="">
-                </div>
-                <p><?= $flow["text03"] ?></p>
-            </div>
             <?php endforeach; ?>
         </div>
 
     </div>
 </section>
+<section class="sect_6" id="sect_6">
+    <div class="l-wrap">
+        <div class="sect_6__header">
+            <p class="c-heading03 c-heading03__main">
+                毎日の暮らしに無理なく、<br>
+                #疲労感軽減ルーティンを<br class="u-d-n-laptop">取り入れましょう。
+            </p>
+        </div>
+    </div>
+    <div class="p-content01">
+        <div class="l-wrap">
+            <div class="p-content01__main">
+                <div class="p-content01__row">
+                    <div class="p-content01__column">
+                        <img src="<?= resource('img', 'raw/sect_6-img01.png') ?>" alt="">
+                        <p class="badge">機能性表示食品</p>
+                        <div class="frame u-d-n-laptop">
+                            <div class="frame__content">
+                                <p>疲労感<br>
+                                    軽減</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-content01__column">
+                        <p class="heading"><span>クエン酸3,000mg配合</span><span>※</span><br class="u-d-n-laptop">で疲労感を軽減！</p>
+                        <div class="row">
+                            <div class="paragraph">
+                                <p>
+                                    クエン酸を1ℓ当たり3,000mg 配合。継続摂取により、日常生活や運動後の疲労感を軽減することが期待されます。
+                                </p>
+                                <p>※グレープフルーツ味のみ</p>
+                            </div>
+                            <div class="frame u-d-n-responsive">
+                                <div class="frame__content">
+                                    <p>疲労感<br>
+                                        軽減</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="p-content01__footer">
+                    本品は、事業者の責任において特定の保健の目的が期待できる旨を表示するものとして、消費者庁長官に届出されたものです。ただし、特定保健用食品と異なり、 消費者庁長官による個別審査を受けたものではありません。本品は、疾病の診断、治療、予防を目的としたものではありません。食生活は、主食、主菜、副菜を基本に、食事のバランスを。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 <?php
 includeWithVariables('includes/footer.php', ['footerJS' => ['all.js']]) ?>
-

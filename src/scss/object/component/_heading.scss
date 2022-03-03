@@ -21,7 +21,7 @@
         position: relative;
         &::after,
         &::before {
-          background-color: $color-primary-alt;
+          background-color: #707070;
           content: "";
           height: 1px;
           width: 15%;
@@ -29,6 +29,9 @@
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
+          @include is-responsive {
+            content: unset;
+          }
         }
         &::after {
           right: 0;
@@ -86,6 +89,19 @@
         text-align: left;
         @include font-line(12, 20);
         padding: 0 14px;
+      }
+    }
+  }
+  &03 {
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    &__main {
+      @include font-line(34, 54);
+      letter-spacing: .064em;
+      @include is-responsive {
+        @include font-line(18, 28);
+        letter-spacing: .02em;
       }
     }
   }

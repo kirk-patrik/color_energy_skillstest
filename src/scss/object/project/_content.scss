@@ -1,0 +1,164 @@
+.p-content {
+  &01 {
+    background-color: $color-primary;
+    color: #fff;
+    margin: 62px 0 0;
+    &__main {
+      padding: 32px 0 40px;
+      max-width: 782px;
+      margin: 0 auto;
+      @include is-responsive {
+        padding: 32px 9px 33px;
+        max-width: 100%;
+      }
+    }
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      @include is-responsive {
+        flex-direction: column;
+      }
+    }
+    &__column:first-child {
+      width: 185px;
+      align-self: flex-end;
+      @include is-responsive {
+        width: 100%;
+      }
+      p.badge {
+        text-align: center;
+        min-height: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid #eeefee;
+        font-weight: 700;
+        letter-spacing: 0;
+        @include font-line(15);
+        @include is-responsive {
+          width: 158px;
+          margin: 117px auto 0;
+          @include font-line(12);
+          min-height: 33px;
+        }
+      }
+      img {
+        width: 151px;
+        height: 181px;
+        position: absolute;
+        top: -43px;
+        @include is-responsive {
+          width: 135px;
+          height: 162px;
+          left: 50%;
+          transform: translateX(-95%);
+          top: -32px;
+        }
+      }
+    }
+    &__column:last-child {
+      width: calc(100% - 239px);
+      @include is-responsive {
+        width: 100%;
+        margin-top: 20px;
+      }
+      .heading {
+        @include font-line(27, 27);
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        margin-bottom: 33px;
+        @include is-responsive {
+          @include font-line(24, 48);
+          text-align: center;
+          margin-bottom: 24px;
+        }
+        & span:first-child {
+          display: inline-block;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: -16px;
+            left: 0;
+            background-color: #fff;
+            @include is-responsive {
+              bottom: 0;
+            }
+          }
+        }
+        & span:nth-child(2) {
+          @include font-line(16);
+          @include is-responsive {
+            @include font-line(14, 14);
+          }
+        }
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        .paragraph {
+          max-width: 379px;
+          & p:first-child {
+            @include font-line(16, 28);
+            letter-spacing: 0.02em;
+            font-weight: 700;
+            margin-bottom: 18px;
+            @include is-responsive {
+              @include font-line(14, 26);
+            }
+          }
+          & p:last-child {
+            @include font-line(14, 14);
+            letter-spacing: 0.02em;
+            font-weight: 500;
+            @include is-responsive {
+              @include font-line(11, 11);
+            }
+          }
+        }
+      }
+    }
+    .frame {
+      width: calc(100% - 379px);
+      &__content {
+        background: url(../tiny/raw/sect_6-img02.png) no-repeat;
+        height: 119.11px;
+        width: 124.16px;
+        background-size: cover;
+        background-position: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 13px;
+        @include is-responsive {
+          position: absolute;
+          top: -30px;
+          left: 50%;
+          transform: translateX(4%);
+          width: 110.85px;
+          height: 106.33px;
+        }
+        p {
+          @include font-line(19, 25);
+          font-weight: 700;
+          letter-spacing: 0.06em;
+          color: #565225;
+          @include font-line(16, 21);
+        }
+      }
+    }
+    &__footer {
+      @include font-line(13, 22);
+      letter-spacing: 0.02em;
+      font-weight: 500;
+      margin-top: 31px;
+      @include is-responsive {
+        @include font-line(11, 20);
+      }
+    }
+  }
+}
