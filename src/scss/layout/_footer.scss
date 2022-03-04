@@ -1,9 +1,60 @@
 .l-footer {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0 0 30px 0;
-
-    &--addons {
-        padding: 30px 0;
+  min-height: 106px;
+  background-color: #292929;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  @include is-responsive {
+      min-height: 55px;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 887px;
+    @include font-line(14, 14);
+    @include is-responsive {
+        display: none;
     }
+  }
+  .copyright {
+    @include font-line(12, 12);
+    position: relative;
+    top: 20px;
+    @include is-responsive {
+        top: unset;
+    }
+  }
+  .separator {
+    width: 1px;
+    background: #fff;
+  }
+  .scrollTop {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #ffd500;
+    position: absolute;
+    right: 28px;
+    bottom: 12px;
+    @include is-responsive {
+        display: none;
+    }
+    &::before {
+        border: 4px solid #ffd500;
+        border-left: none;
+        border-top: none;
+        content: "";
+        height: 12px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%) rotate(225deg);
+        top: 21px;
+        width: 12px;
+    }
+  }
 }

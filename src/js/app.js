@@ -9,4 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         item.innerHTML = newHTML;
     });
+    document.querySelector('.scrollTop').addEventListener('click', () => {
+        scrollToTop();
+    });
 });

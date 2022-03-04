@@ -66,6 +66,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
         </div>
 
     </div>
+    <img class="top-bg" src="<?= resource('img', 'raw/sect_4-bg01.png') ?>" alt="">
 </section>
 <section class="sect_5" id="sect_5">
     <div class="l-wrap">
@@ -181,6 +182,23 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                                     うれしい！</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notification">
+                <div class="notification__row">
+                    <p class="notification__heading">届出表示</p>
+                    <div class="notification__col">
+                        <p>機能性関与成分 <span>：</span></p>
+                        <p>クエン酸3,000mg</p>
+                    </div>
+                    <div class="notification__col">
+                        <p>届出表示（G294)：</p>
+                        <p>
+                            本品にはクエン酸が含まれます。<br>
+                            クエン酸は継続摂取により、日常の生活や運動後の疲労感を軽減する<br class="u-d-n-responsive">
+                            働きがあることが報告されています。
+                        </p>
                     </div>
                 </div>
             </div>

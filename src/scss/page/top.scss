@@ -2,7 +2,7 @@
 @import "../core/root/_variables";
 .sect_4 {
   background-color: #f8f8f8;
-  padding: 100px 0 60px;
+  padding: 100px 0 0;
   &__header {
     p:first-child {
       margin-bottom: 13px;
@@ -11,7 +11,7 @@
   &__header_sub {
     margin: 20px 0 40px;
     @include is-responsive {
-      margin: 10px 0 29px;
+      margin: 24px 0 36px;
       & p:first-child {
         br {
           display: none;
@@ -39,11 +39,11 @@
       justify-content: space-between;
       align-items: center;
       max-width: 980px;
-      margin: 180px auto 0;
+      margin: 180px auto 60px;
       position: relative;
       flex-wrap: wrap;
       @include is-responsive {
-        margin: 69.7px auto 0;
+        margin: 69.7px auto 76px;
       }
     }
     &__type {
@@ -149,14 +149,18 @@
 }
 .sect_5 {
   background-color: #eeefee;
-  padding-top: 126px;
+  padding-top: 10px;
+  @include is-responsive {
+    padding-top: 50px;
+  }
   &__header {
     p:first-child {
       margin-bottom: 13px;
     }
     & p:last-child {
       @include font-line(34);
-      &::before,  &::after {
+      &::before,
+      &::after {
         width: 30%;
       }
     }
@@ -164,7 +168,7 @@
   &__header_sub {
     margin: 20px 0 40px;
     @include is-responsive {
-      margin: 10px 0 29px;
+      margin: 22px 0 36px;
       & p:first-child {
         br {
           display: none;
@@ -175,9 +179,80 @@
   &__main_content {
     margin-bottom: -214px;
     @include is-responsive {
-      margin-bottom: 0;
+      margin-bottom: -127px;
       position: relative;
-      bottom: -127px;
+      bottom: unset;
+    }
+  }
+  .notification {
+    max-width: 768px;
+    margin: 0 auto 50px;
+    @include is-responsive {
+      margin-bottom: 40px;
+    }
+    &__heading {
+      font-family: Zen Maru Gothic;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      @include font-line(18, 18);
+      color: #2466ab;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      width: 127px;
+      background: #eee;
+      text-align: center;
+      top: -10px;
+    }
+    &__row {
+      border: 1px solid #2466ab;
+      border-radius: 20px;
+      background-color: #eee;
+      padding: 37px 42px 34px;
+      position: relative;
+      @include is-responsive {
+        padding: 23px 29px;
+      }
+      & .notification__col:nth-child(2) {
+        margin-bottom: 12px;
+      }
+    }
+    &__col {
+      display: flex;
+      @include is-responsive {
+        flex-direction: column
+      }
+      p {
+        @include font-line(16, 24);
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        @include is-responsive {
+          @include font-line(13, 19);
+        }
+      }
+      & p:first-child {
+        width: 23%;
+        position: relative;
+        @include is-responsive {
+          width: 100%;
+        }
+        span {
+          position: absolute;
+          right: 7px;
+          @include is-responsive {
+            position: unset;
+          }
+        }
+      }
+      & p:last-child {
+        padding-left: 12px;
+        @include font-line(14, 24);
+        @include is-responsive {
+          padding-left: 0;
+          @include font-line(12, 19);
+        }
+      }
     }
   }
 }
