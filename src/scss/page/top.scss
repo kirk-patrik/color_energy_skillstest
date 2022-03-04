@@ -2,7 +2,7 @@
 @import "../core/root/_variables";
 .sect_4 {
   background-color: #f8f8f8;
-  padding: 100px 0 0;
+  padding: 100px 0 60px;
   &__header {
     p:first-child {
       margin-bottom: 13px;
@@ -147,12 +147,47 @@
     }
   }
 }
+.sect_5 {
+  background-color: #eeefee;
+  padding-top: 126px;
+  &__header {
+    p:first-child {
+      margin-bottom: 13px;
+    }
+    & p:last-child {
+      @include font-line(34);
+      &::before,  &::after {
+        width: 30%;
+      }
+    }
+  }
+  &__header_sub {
+    margin: 20px 0 40px;
+    @include is-responsive {
+      margin: 10px 0 29px;
+      & p:first-child {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+  &__main_content {
+    margin-bottom: -214px;
+    @include is-responsive {
+      margin-bottom: 0;
+      position: relative;
+      bottom: -127px;
+    }
+  }
+}
 .sect_6 {
-  background-color: #f8f8f8;
   padding: 90px 0 62px;
   position: relative;
+  margin-top: 90px;
   @include is-responsive {
     padding: 90px 0 30px;
+    margin-top: 58px;
   }
   &::before {
     border: 4px solid #ffd500;
@@ -332,6 +367,7 @@
         margin: 0 auto;
         @include is-responsive {
           max-width: 100%;
+          width: 100%;
         }
       }
     }

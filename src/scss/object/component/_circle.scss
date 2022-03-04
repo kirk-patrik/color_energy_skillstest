@@ -43,4 +43,22 @@
         }
     }
   }
+
+  &03 {
+   width: 96px;
+   height: 96px;
+   border: 1px solid #fff;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: Zen Maru Gothic;
+   @include font-line(14, 19);
+   letter-spacing: 0;
+   @include is-responsive {
+     width: 58px;
+     height: 58px;
+     @include font-line(9, 11);
+   }
+  }
 }

@@ -67,6 +67,395 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
 
     </div>
 </section>
+<section class="sect_5" id="sect_5">
+    <div class="l-wrap">
+        <div class="sect_5__header">
+            <p class="c-heading01 c-heading01__main">
+                type
+            </p>
+            <p class="c-heading01 c-heading01__sub c-heading01__sub--line">
+                選べる<span class="yellow isCircle">3タイプ</span>
+            </p>
+        </div>
+        <div class="sect_5__header_sub">
+            <p class="c-heading02 c-heading02__main">
+                スカイウォーターシリーズは、 3つのフレーバーをご用意。さまざまな味が楽しめるのは<br>もちろん、日常生活やスポーツなど目的やシーンに合わせてお選びいただけます。
+            </p>
+        </div>
+        <div class="sect_5__main_content">
+            <div class="p-content02 p-content02--blue">
+                <div class="p-content02__heading">
+                    <p>毎日の水分補給をしたい方に</p>
+                    <img src="<?= resource('img', 'raw/sect_5-svg-skywater.svg') ?>" alt="">
+                </div>
+                <p class="flavor color__blue">グレープフルーツ味<span>機能性表示食品</span></p>
+                <div class="p-content02__main">
+                    <div class="row">
+                        <div class="col">
+                            <div class="circles">
+                                <p class="c-circle03">
+                                    <span>糖類 <br>
+                                        控えめ!</span>
+                                </p>
+                                <p class="c-circle03">
+                                    <span>1Lあたり<br>
+                                        50kcal</span>
+                                </p>
+                                <p class="c-circle03">
+                                    <span>ハイボ<br>
+                                        トニック<br>
+                                        飲料</span>
+                                </p>
+                                <div class="frame__content">
+                                    <p>疲労感<br>
+                                        軽減</p>
+                                </div>
+                            </div>
+                            <p class="para1">
+                                糖類控えめで、クエン酸3,000mgを配合しているから、スポーツ時や毎日の元気サポートにもおすすめ！
+                                グレープフルーツ原料不使用で、高血圧のカルシウム拮抗薬等を飲まれている方にも安心です。
+                            </p>
+                            <div class="sp-center u-d-n-laptop">
+                                <img src="<?= resource('img', 'raw/skywater-img01.svg') ?>" alt="">
+                                <div class="drinking">
+                                    <img src="<?= resource('img', 'raw/sect_5-drinking01.svg') ?>" alt="">
+                                    <p class="color__blue">糖類控えめは<br>
+                                        うれしい！</p>
+                                </div>
+                            </div>
+                            <p class="para2">
+                                栄養成分表示/小袋1袋(15g)当たり
+                            </p>
+                            <div class="table-row">
+                                <div class="table-col">
+                                    <div class="item">
+                                        <div>
+                                            <p>熱量</p>
+                                            <p>タンパク質</p>
+                                            <p>脂質</p>
+                                            <p>炭水化物</p>
+                                            <p>糖類</p>
+                                        </div>
+                                        <div>
+                                            <p>50kcal</p>
+                                            <p>0.1g</p>
+                                            <p>0g</p>
+                                            <p>13g</p>
+                                            <p>10g</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-col">
+                                    <div class="item">
+                                        <div>
+                                            <p>食塩相当量</p>
+                                            <p>カリウム</p>
+                                            <p>カルシウム</p>
+                                            <p>マグネシウム</p>
+                                        </div>
+                                        <div>
+                                            <p>1.3g</p>
+                                            <p>237mg</p>
+                                            <p>22mg</p>
+                                            <p>6mg</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <p>食塩相当量</p>
+                                            <p>カリウム</p>
+                                        </div>
+                                        <div>
+                                            <p class="hide">none</p>
+                                            <p>3,000mg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col u-d-n-responsive">
+                            <img src="<?= resource('img', 'raw/skywater-img01.svg') ?>" alt="">
+                            <div class="drinking">
+                                <img src="<?= resource('img', 'raw/sect_5-drinking01.svg') ?>" alt="">
+                                <p class="color__blue">糖類控えめは<br>
+                                    うれしい！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-content02 p-content02--violet">
+                <div class="p-content02__heading">
+                    <p>パフォーマンスを上げたい方に</p>
+                    <img src="<?= resource('img', 'raw/sect_5-svg-skywater.svg') ?>" alt="">
+                </div>
+                <p class="flavor color__violet">グレープ味</p>
+                <div class="p-content02__main">
+                    <div class="row">
+                        <div class="col">
+                            <div class="circles">
+                                <p class="c-circle03">
+                                    <span>糖類<br>
+                                        控えめ</span>
+                                </p>
+                                <p class="c-circle03">
+                                    <span>1Lあたり<br>
+                                        50kcal</span>
+                                </p>
+                                <p class="c-circle03">
+                                    <span>ハイボ<br>
+                                        トニック<br>
+                                        飲料</span>
+                                </p>
+                                <p class="c-circle03">
+                                    <span>マルチ<br>
+                                        アミノ酸<br>
+                                        配合</span>
+                                </p>
+                            </div>
+                            <p class="para1">
+                                糖類控えめで、クエン酸3,000mgを配合しているから、スポーツ時や毎日の元気サポートにもおすすめ！
+                                グレープフルーツ原料不使用で、高血圧のカルシウム拮抗薬等を飲まれている方にも安心です。
+                            </p>
+                            <div class="sp-center u-d-n-laptop">
+                                <img src="<?= resource('img', 'raw/skywater-img02.svg') ?>" alt="">
+                                <div class="drinking">
+                                    <img src="<?= resource('img', 'raw/sect_5-drinking02.svg') ?>" alt="">
+                                    <p class="color__violet">これなら<br>
+                                        ゴクゴク<br>飲めるね</p>
+                                </div>
+                            </div>
+                            <p class="para2">
+                                栄養成分表示/小袋1袋(14.5g)当たり
+                            </p>
+                            <div class="table-row">
+                                <div class="table-col">
+                                    <div class="item">
+                                        <div>
+                                            <p>熱量</p>
+                                            <p>タンパク質</p>
+                                            <p>脂質</p>
+                                            <p>炭水化物</p>
+                                            <p>糖類</p>
+                                            <p>食塩相当量</p>
+                                            <p>カリウム</p>
+                                        </div>
+                                        <div>
+                                            <p>50kcal</p>
+                                            <p>0.2g</p>
+                                            <p>0g</p>
+                                            <p>13g</p>
+                                            <p>11g</p>
+                                            <p>1.0g</p>
+                                            <p>170mg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-col">
+                                    <div class="item">
+                                        <div>
+                                            <p>カルシウム</p>
+                                            <p>マグネシウム</p>
+                                        </div>
+                                        <div>
+                                            <p>22mg</p>
+                                            <p>6mg</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <p>クエン酸</p>
+                                            <p>アルギニン</p>
+                                            <p>シトルリン</p>
+                                            <p>グルタミン</p>
+                                        </div>
+                                        <div>
+                                            <p>1,500mg</p>
+                                            <p>30mg</p>
+                                            <p>30mg</p>
+                                            <p>15mg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col u-d-n-responsive">
+                            <img src="<?= resource('img', 'raw/skywater-img02.svg') ?>" alt="">
+                            <div class="drinking">
+                                <img src="<?= resource('img', 'raw/sect_5-drinking02.svg') ?>" alt="">
+                                <p class="color__violet">これなら<br>
+                                    ゴクゴク<br>
+                                    飲めるね</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-content02 p-content02--pink">
+                <div class="p-content02__heading">
+                    <p>コンディションが気になる方に</p>
+                    <img src="<?= resource('img', 'raw/sect_5-svg-skywater.svg') ?>" alt="">
+                </div>
+                <p class="flavor color__pink">ライチ味</p>
+                <div class="p-content02__main">
+                    <div class="row">
+                        <div class="col">
+                            <div class="circles">
+                                <p class="c-circle03">
+                                    <span>糖類<br>
+                                        ゼロ!</span>
+                                </p>
+                                <p class="c-circle03">
+                                    <span>1Lあたり<br>
+                                        7kcal</span>
+                                </p>
+                                <p class="c-circle03">
+                                    <span>ハイボ<br>
+                                        トニック<br>
+                                        飲料</span>
+                                </p>
+                                <p class="c-circle03">
+                                    <span>マルチ<br>
+                                        ビタミン<br>
+                                        配合</span>
+                                </p>
+                            </div>
+                            <p class="para1">
+                                糖類ゼロで、クエン酸のほかに11種類のビタミン<br>
+                                (V.B1、V.B2、V.B6、V.B12、V.A、V.C、V.D、V.E、<br>
+                                葉酸、パントテン酸、ナイアシン)を配合しているから、<br>
+                                スポーツ時のコンディション対策におすすめ！<br>
+                                甘さすっきりで、飲みやすいライチ味です。
+                            </p>
+                            <div class="sp-center u-d-n-laptop">
+                                <img src="<?= resource('img', 'raw/skywater-img03.svg') ?>" alt="">
+                                <div class="drinking">
+                                    <img src="<?= resource('img', 'raw/sect_5-drinking03.svg') ?>" alt="">
+                                    <p class="color__pink">糖類<br>
+                                        ゼロなら<br>あんしん</p>
+                                </div>
+                            </div>
+                            <p class="para2">
+                                栄養成分表示/小袋1袋(7g)当たり
+                            </p>
+                            <div class="table-row">
+                                <div class="table-col">
+                                    <div class="item">
+                                        <div>
+                                            <p>熱量</p>
+                                            <p>タンパク質</p>
+                                            <p>脂質</p>
+                                            <p>炭水化物</p>
+                                            <p>糖類</p>
+                                            <p>食塩相当量</p>
+                                            <p>カリウム</p>
+                                            <p class="u-d-n-laptop">カルシウム</p>
+                                            <p class="adjustfont u-d-n-laptop">マグネシウム</p>
+                                        </div>
+                                        <div>
+                                            <p>7kcal</p>
+                                            <p>0.05g</p>
+                                            <p>0g</p>
+                                            <p>5.5g</p>
+                                            <p>0g</p>
+                                            <p>1.0g</p>
+                                            <p>158mg</p>
+                                            <p class="u-d-n-laptop">34mg</p>
+                                            <p class="u-d-n-laptop">6mg</p>
+                                        </div>
+                                    </div>
+                                    <div class="item u-pt-5 u-d-n-laptop" style="border: none;">
+                                        <div>
+                                            <p>クエン酸</p>
+                                        </div>
+                                        <div>
+                                            <p>1,500mg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-col u-d-n-responsive">
+                                    <div class="item">
+                                        <div>
+                                            <p>カルシウム</p>
+                                            <p class="adjustfont">マグネシウム</p>
+                                            <p>V.A</p>
+                                            <p>V.B<span>1</span></p>
+                                            <p>V.B<span>2</span></p>
+                                            <p>V.B<span>6</span></p>
+                                            <p>V.B<span>12</span></p>
+                                        </div>
+                                        <div>
+                                            <p>34mg</p>
+                                            <p>6mg</p>
+                                            <p>27μg</p>
+                                            <p>0.04mg</p>
+                                            <p>0.04mg</p>
+                                            <p>0.03mg</p>
+                                            <p>0.1μg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-col">
+                                    <div class="item">
+                                        <div>
+                                            <p class="u-d-n-laptop">V.A</p>
+                                            <p class="u-d-n-laptop">V.B<span>1</span></p>
+                                            <p class="u-d-n-laptop">V.B<span>2</span></p>
+                                            <p class="u-d-n-laptop">V.B<span>6</span></p>
+                                            <p class="u-d-n-laptop">V.B<span>12</span></p>
+                                            <p>V.C</p>
+                                            <p>V.D</p>
+                                            <p>V.E</p>
+                                            <p>葉酸</p>
+                                            <p>ナイアシン</p>
+                                            <p class="adjustfont">パントテン酸</p>
+                                            <p class="adjustfont rl">0.054mg</p>
+                                        </div>
+                                        <div>
+                                            <p class="u-d-n-laptop">27μg</p>
+                                            <p class="u-d-n-laptop">0.04mg</p>
+                                            <p class="u-d-n-laptop">0.04mg</p>
+                                            <p class="u-d-n-laptop">0.03mg</p>
+                                            <p class="u-d-n-laptop">0.1μg</p>
+                                            <p>3.6mg</p>
+                                            <p>0.2μg</p>
+                                            <p>0.2mg</p>
+                                            <p>7μg</p>
+                                            <p>0.4mg</p>
+                                            <p class="hide">hide</p>
+                                            <p class="adjustfont rr">-0.36mg</p>
+                                        </div>
+                                    </div>
+                                    <div class="item u-pt-5 u-d-n-responsive" style="border: none;">
+                                        <div>
+                                            <p>クエン酸</p>
+                                        </div>
+                                        <div>
+                                            <p>1,500mg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-col u-d-n"></div>
+
+                            </div>
+                        </div>
+                        <div class="col u-d-n-responsive">
+                            <img class="u-mt-15" src="<?= resource('img', 'raw/skywater-img03.svg') ?>" alt="">
+                            <div class="drinking">
+                                <img src="<?= resource('img', 'raw/sect_5-drinking03.svg') ?>" alt="">
+                                <p class="color__pink">糖類<br>
+                                    ゼロなら<br>
+                                    あんしん</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <img class="top-bg" src="<?= resource('img', 'raw/sect_6-bg01.png') ?>" alt="">
+</section>
 <section class="sect_6" id="sect_6">
     <div class="l-wrap">
         <div class="sect_6__header">
