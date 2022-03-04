@@ -186,11 +186,10 @@
   &__main_content {
     margin: 112px 0 97px;
     @include is-responsive {
-      margin: 50px 0 25px;
+      margin: 50px 0;
     }
     .content01 {
       .row {
-        overflow: hidden;
         max-width: 800px;
         margin: 0 auto;
         position: relative;
@@ -201,6 +200,13 @@
         align-items: center;
         justify-content: flex-start;
         padding: 0 0 0 23px;
+        overflow: visible;
+        @include is-responsive {
+          min-height: auto;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 17px 13px 25px;
+        }
         &::before {
           background-color: #c1e3ed;
           content: "";
@@ -208,7 +214,14 @@
           left: 0;
           top: 0;
           position: absolute;
+          border-radius: 16px 0 0 16px;
           width: 308px;
+          @include is-responsive {
+            z-index: -1;
+            width: 100%;
+            border-radius: 0;
+            height: 53%;
+          }
         }
         .col1 {
           min-height: 62px;
@@ -224,6 +237,13 @@
           font-weight: 700;
           letter-spacing: 0;
           position: relative;
+          @include is-responsive {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 32px;
+            @include font-line(14, 14);
+            min-height: 46px;
+          }
           &::after {
             background-color: transparent;
             bottom: 0;
@@ -237,10 +257,20 @@
             position: absolute;
             right: -15px;
             width: 26px;
+            @include is-responsive {
+              transform: rotate(-145deg);
+              right: 53px;
+              z-index: -1;
+              bottom: -11px;
+            }
           }
         }
         .col2 {
           margin-bottom: 3px;
+          @include is-responsive {
+            order: 3;
+            margin-top: 26px;
+          }
           p {
             color: #341f88;
             font-weight: 700;
@@ -249,11 +279,18 @@
             @include font-line(19, 19);
             letter-spacing: 0;
             margin-bottom: 8px;
+            @include is-responsive {
+              @include font-line(16, 16);
+              margin-bottom: 10px;
+            }
           }
           & p:last-child {
             @include font-line(22, 22);
             letter-spacing: -0.04em;
             position: relative;
+            @include is-responsive {
+              @include font-line(19, 19);
+            }
             &::after {
               background-color: #351e88;
               content: "";
@@ -265,6 +302,9 @@
             }
             span {
               @include font-line(32, 32);
+              @include is-responsive {
+                @include font-line(28, 28);
+              }
             }
           }
         }
@@ -276,6 +316,11 @@
           object-fit: contain;
           height: auto;
           transform: scale(1.7);
+          @include is-responsive {
+            order: 2;
+            transform: scale(1.4);
+            position: unset;
+          }
         }
       }
     }
