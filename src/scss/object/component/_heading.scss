@@ -54,6 +54,7 @@
       .blue {
         &::before {
           background-color: $color-tertiary;
+          opacity: 0.2;
         }
       }
       .isCircle {

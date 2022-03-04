@@ -1,6 +1,101 @@
 <?php
 require('app/functions.php');
 includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' => ['page/top.css']]) ?>
+<section class="sect_3" id="sect_3">
+    <div class="l-wrap">
+        <div class="sect_3__header">
+            <p class="c-heading01 c-heading01__main">
+                routine
+            </p>
+            <p class="c-heading01 c-heading01__sub c-heading01__sub--line">
+                #<span class="blue isCircle">疲労感軽減</span>ルーティンはじめよう
+            </p>
+        </div>
+        <div class="sect_3__header_sub">
+            <p class="c-heading02 c-heading02__main">
+                いつもの飲み物をスカイウォーターグレープフルーツ味に変えることで、毎日の暮らしの中に気軽に<br>疲労感を軽減する習慣を取り入れていくこと。 それが「#疲労感軽減ルーティン」です。
+            </p>
+        </div>
+    </div>
+    <div class="p-content01">
+        <div class="l-wrap">
+            <div class="p-content01__main">
+                <div class="p-content01__row">
+                    <div class="p-content01__column">
+                        <img src="<?= resource('img', 'raw/sect_6-img01.png') ?>" alt="">
+                        <p class="badge">機能性表示食品</p>
+                        <div class="frame u-d-n-laptop">
+                            <div class="frame__content">
+                                <p>疲労感<br>
+                                    軽減</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-content01__column">
+                        <p class="heading"><span>クエン酸3,000mg配合</span><span>※</span><br class="u-d-n-laptop">で疲労感を軽減！</p>
+                        <div class="row">
+                            <div class="paragraph">
+                                <p>
+                                    クエン酸を1ℓ当たり3,000mg 配合。継続摂取により、日常生活や運動後の疲労感を軽減することが期待されます。
+                                </p>
+                                <p>※グレープフルーツ味のみ</p>
+                            </div>
+                            <div class="frame u-d-n-responsive">
+                                <div class="frame__content">
+                                    <p>疲労感<br>
+                                        軽減</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="p-content01__footer">
+                    本品は、事業者の責任において特定の保健の目的が期待できる旨を表示するものとして、消費者庁長官に届出されたものです。ただし、特定保健用食品と異なり、 消費者庁長官による個別審査を受けたものではありません。本品は、疾病の診断、治療、予防を目的としたものではありません。食生活は、主食、主菜、副菜を基本に、食事のバランスを。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="l-wrap">
+        <div class="citric__acid">
+            <div class="row">
+                <div class="col">
+                    <img src="<?= resource('img', 'raw/sect_3-img01.png') ?>" alt="">
+                </div>
+                <div class="col">
+                    <div class="heading">
+                        <p class="title">citric acid</p>
+                        <p class="sub">クエン酸とは？</p>
+                    </div>
+                    <p class="para">クエン酸は柑橘類などに含まれる酸味成分で、活動エネルギー生産の中心的役割を担っています。継続的に摂取することで、 日常の生活や運動後の疲労感を軽減する働きがあることが報告されています。</p>
+                </div>
+            </div>
+        </div>
+        <div class="recommended">
+            <div class="recommended__row">
+                <p class="recommended__heading">こんなときに飲むのが<span>おすすめ</span></p>
+                <div class="recommended__col">
+                    <img src="<?= resource('img', 'raw/sect_3-recommended01.png') ?>" alt="">
+                    <p>帰宅したときの１杯に…</p>
+                </div>
+                <div class="recommended__col">
+                    <img src="<?= resource('img', 'raw/sect_3-recommended02.png') ?>" alt="">
+                    <p>朝起きたときの１杯に…</p>
+                </div>
+                <div class="recommended__col">
+                    <img src="<?= resource('img', 'raw/sect_3-recommended03.png') ?>" alt="">
+                    <p>在宅勤務中の１杯に…</p>
+                </div>
+                <div class="recommended__col">
+                    <img src="<?= resource('img', 'raw/sect_3-recommended04.png') ?>" alt="">
+                    <p>お風呂上がりの１杯に…</p>
+                </div>
+                <div class="arrow-down">
+                    <img src="<?= resource('img', 'raw/arrow-down.svg') ?>" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="sect_4" id="sect_4">
     <div class="l-wrap">
         <div class="sect_4__header">
