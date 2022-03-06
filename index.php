@@ -8,7 +8,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                 routine
             </p>
             <p class="c-heading01 c-heading01__sub c-heading01__sub--line">
-                #<span class="blue isCircle">疲労感軽減</span>ルーティンはじめよう
+                #<span class="blue isCircle">疲労感軽減</span><br class="u-d-n-laptop">ルーティンはじめよう
             </p>
         </div>
         <div class="sect_3__header_sub">
@@ -66,31 +66,33 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                         <p class="title">citric acid</p>
                         <p class="sub">クエン酸とは？</p>
                     </div>
-                    <p class="para">クエン酸は柑橘類などに含まれる酸味成分で、活動エネルギー生産の中心的役割を担っています。継続的に摂取することで、 日常の生活や運動後の疲労感を軽減する働きがあることが報告されています。</p>
+                    <p class="para u-d-n-responsive">クエン酸は柑橘類などに含まれる酸味成分で、活動エネルギー生産の中心的役割を担っています。継続的に摂取することで、 日常の生活や運動後の疲労感を軽減する働きがあることが報告されています。</p>
                 </div>
             </div>
+            <p class="para para-sp u-d-n-laptop">クエン酸は柑橘類などに含まれる酸味成分で、活動エネルギー生産の中心的役割を担っています。継続的に摂取することで、 日常の生活や運動後の疲労感を軽減する働きがあることが報告されています。</p>
         </div>
         <div class="recommended">
             <div class="recommended__row">
                 <p class="recommended__heading">こんなときに飲むのが<span>おすすめ</span></p>
                 <div class="recommended__col">
                     <img src="<?= resource('img', 'raw/sect_3-recommended01.png') ?>" alt="">
-                    <p>帰宅したときの１杯に…</p>
+                    <p>帰宅したときの<br class="u-d-n-laptop">１杯に…</p>
                 </div>
                 <div class="recommended__col">
                     <img src="<?= resource('img', 'raw/sect_3-recommended02.png') ?>" alt="">
-                    <p>朝起きたときの１杯に…</p>
+                    <p>朝起きたときの<br class="u-d-n-laptop">１杯に…</p>
                 </div>
                 <div class="recommended__col">
                     <img src="<?= resource('img', 'raw/sect_3-recommended03.png') ?>" alt="">
-                    <p>在宅勤務中の１杯に…</p>
+                    <p>在宅勤務中の<br class="u-d-n-laptop">１杯に…</p>
                 </div>
                 <div class="recommended__col">
                     <img src="<?= resource('img', 'raw/sect_3-recommended04.png') ?>" alt="">
-                    <p>お風呂上がりの１杯に…</p>
+                    <p>お風呂上がりの<br class="u-d-n-laptop">１杯に…</p>
                 </div>
                 <div class="arrow-down">
-                    <img src="<?= resource('img', 'raw/arrow-down.svg') ?>" alt="">
+                    <img class="u-d-n-responsive" src="<?= resource('img', 'raw/arrow-down.svg') ?>" alt="">
+                    <img class="u-d-n-laptop" src="<?= resource('img', 'raw/arrow-down-sp.svg') ?>" alt="">
                 </div>
             </div>
         </div>
@@ -98,12 +100,13 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
             <span>
                 <img src="<?= resource('img', 'raw/change_word.svg') ?>" alt="">
             </span>
-            <p>いつもの１杯をスカイウォーターのグレープフルーツ味にかえよう</p>
+            <p>いつもの１杯をスカイウォーターの<br class="u-d-n-laptop">グレープフルーツ味にかえよう</p>
         </div>
         <div class="frame">
             <div class="row">
                 <div class="col">
-                    <img src="<?= resource('img', 'raw/sect_3-img02.png') ?>" alt="">
+                    <img class="u-d-n-responsive" src="<?= resource('img', 'raw/sect_3-img02.png') ?>" alt="">
+                    <img class="u-d-n-laptop" src="<?= resource('img', 'raw/sect_3-img02-sp.png') ?>" alt="">
                 </div>
                 <div class="col">
                     <div class="image__container">
@@ -118,10 +121,13 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                     </div>
                 </div>
             </div>
+            <div class="u-d-n-laptop" style="text-align: center; margin-top: 21.7px;">
+            <img src="<?= resource('img', 'raw/arrow-down-sp.svg') ?>" alt="">
+            </div>
         </div>
     </div>
     <div class="started">
-        <p class="c-heading02 c-heading02__sub started__heading">毎日のクエン酸習慣で日常の疲労感を軽減</p>
+        <p class="c-heading02 c-heading02__sub started__heading">毎日のクエン酸習慣で<br class="u-d-n-laptop">日常の疲労感を軽減</p>
         <div class="started__banner">
             <div class="l-wrap">
                 <div class="started__txt">
@@ -133,7 +139,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
             </div>
         </div>
     </div>
-    <div class="p-content03">
+    <!-- <div class="p-content03">
         <p class="c-circle04">
             期間限定<br>
             公開中
@@ -161,7 +167,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
 
             </div>
         </div>
-    </div>
+    </div> -->
     <img src="<?= resource('img', 'raw/sect_3-bg02.png') ?>" class="sect_3-bg02" alt="">
 </section>
 <section class="sect_4" id="sect_4">

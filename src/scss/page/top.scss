@@ -12,15 +12,21 @@
   &__header {
     p:first-child {
       margin-bottom: 9px;
+      @include is-responsive {
+        margin-bottom: 17px;
+      }
     }
     & p:last-child {
       @include font-line(34, 87);
+      @include is-responsive {
+        @include font-line(26, 45);
+      }
     }
   }
   &__header_sub {
     margin: 20px 0 86px;
     @include is-responsive {
-      margin: 24px 0 36px;
+      margin: 30px 0 65.1px;
       & p:first-child {
         br {
           display: none;
@@ -31,19 +37,31 @@
   .citric__acid {
     max-width: 1000px;
     margin: 59px auto 70px;
+    @include is-responsive {
+      margin: 44px auto 44px;
+    }
     .row {
       display: flex;
       align-items: flex-start;
       & .col:first-child {
         width: 260px;
+        @include is-responsive {
+          width: 108px;
+        }
       }
       & .col:last-child {
         width: calc(100% - 260px);
+        @include is-responsive {
+          width: calc(100% - 108px);
+        }
       }
     }
     .heading,
     .para {
       padding-left: 73px;
+      @include is-responsive {
+        padding-left: 17.2px;
+      }
     }
     .heading {
       border-bottom: 2px dashed #cfcfcf;
@@ -53,6 +71,12 @@
         @include font-line(20, 13);
         letter-spacing: 0.06em;
         font-weight: 600;
+        @include is-responsive {
+          @include font-line(12, 12);
+          padding-top: 13px;
+          position: relative;
+          top: 7px;
+        }
       }
       & p:last-child {
         font-family: Zen Maru Gothic;
@@ -60,12 +84,25 @@
         letter-spacing: 0.064em;
         font-weight: 700;
         padding-bottom: 7px;
+        @include is-responsive {
+          @include font-line(20, 51);
+          padding-bottom: 0;
+        }
       }
     }
     .para {
       font-family: Zen Maru Gothic;
       @include font-line(16, 28);
       letter-spacing: 0.02em;
+      &-sp {
+        @include is-responsive {
+          margin-top: 18px;
+          @include is-responsive {
+            @include font-line(12, 20);
+            letter-spacing: 0.06em;
+          }
+        }
+      }
     }
   }
   .recommended {
@@ -84,6 +121,13 @@
       width: 484px;
       background: #eee;
       text-align: center;
+      @include is-responsive {
+        @include font-line(14, 34);
+        letter-spacing: 0.025em;
+        top: -22px;
+        width: 232px;
+        transform: translateX(-51%);
+      }
       span {
         color: #306fb2;
         position: relative;
@@ -95,6 +139,10 @@
           width: 100%;
           left: 0;
           bottom: -8px;
+          @include is-responsive {
+            background: url(../../tiny/raw/blue-curly-sp.svg) no-repeat;
+            bottom: -11px;
+          }
         }
       }
     }
@@ -107,17 +155,39 @@
       border: 6px solid #ffd500;
       border-radius: 20px;
       min-height: 315px;
+      @include is-responsive {
+        padding: 39px 20px 30px;
+        min-height: 405px;
+        flex-wrap: wrap;
+      }
     }
     &__col {
+      @include is-responsive {
+        width: 46.3%;
+        &:nth-child(4),
+        &:nth-child(5) {
+          margin-top: 22px;
+        }
+      }
       p {
         font-family: Zen Maru Gothic;
         @include font-line(15, 28);
         letter-spacing: 0.02em;
         text-align: center;
         margin-top: 18px;
+        font-weight: 700;
+        @include is-responsive {
+          @include font-line(12, 20);
+          letter-spacing: 0.06em;
+          font-weight: 500;
+          margin-top: 10px;
+        }
       }
       img {
         width: 180px;
+        @include is-responsive {
+          width: 100%;
+        }
       }
     }
     .arrow-down {
@@ -128,6 +198,13 @@
       width: 64px;
       text-align: center;
       background-color: #eee;
+      @include is-responsive {
+        width: 37px;
+        bottom: -32px;
+        img {
+          width: 21.84px;
+        }
+      }
     }
   }
   .change {
@@ -141,6 +218,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    @include is-responsive {
+      min-height: 76px;
+      margin: 56px auto 35px;
+    }
     &::before,
     &::after {
       content: "";
@@ -154,6 +235,9 @@
       height: 6px;
       width: 40px;
       bottom: -3px;
+      @include is-responsive {
+        width: 18px;
+      }
     }
     &::after {
       border: 1px solid #306fb2;
@@ -164,6 +248,11 @@
       height: 21.3px;
       transform: translateX(-89%);
       width: 23px;
+      @include is-responsive {
+        width: 11px;
+        bottom: -13px;
+        height: 13.3px;
+      }
     }
     span {
       position: absolute;
@@ -171,12 +260,23 @@
       right: 33.2px;
       background: #eee;
       width: 136px;
+      @include is-responsive {
+        width: 88.94px;
+        right: 14.2px;
+        top: -22px;
+        img {
+          width: 64.98px;
+        }
+      }
     }
     p {
       font-family: Zen Maru Gothic;
       @include font-line(26, 64);
       letter-spacing: 0;
       font-weight: 700;
+      @include is-responsive {
+        @include font-line(15, 26);
+      }
     }
   }
   .frame {
@@ -184,24 +284,53 @@
       display: flex;
       justify-content: space-between;
       position: relative;
+      @include is-responsive {
+        flex-direction: column;
+      }
       .col {
         &:first-child {
           margin-left: auto;
           padding-right: 53px;
+          @include is-responsive {
+            padding: 0 37px;
+            margin-left: unset;
+          }
           img {
             width: 486px;
+            @include is-responsive {
+              width: 100%;
+            }
           }
         }
         &:last-child {
           margin-right: auto;
+          @include is-responsive {
+            position: relative;
+            margin-right: unset;
+            margin-top: 25px;
+          }
           img {
             width: 192px;
             margin-top: 30px;
+            @include is-responsive {
+              width: auto;
+              margin-top: 0;
+            }
+            @include is-sp {
+              width: 52%;
+            }
+            @include is-max(375px) {
+              width: 139px;
+            }
           }
         }
         .image__container {
           position: relative;
           left: -26px;
+          @include is-responsive {
+            left: 0;
+            padding-left: 46px;
+          }
         }
         .image__txt {
           @include font-line(18, 18);
@@ -210,10 +339,17 @@
           letter-spacing: 0.03em;
           color: #306fb2;
           margin-top: 18px;
+          @include is-responsive {
+            @include font-line(12, 12);
+            margin-top: 9px;
+          }
           span {
             font-family: Roboto Slab;
             font-weight: 600;
             @include font-line(25, 25);
+            @include is-responsive {
+              @include font-line(17, 17);
+            }
           }
         }
       }
@@ -233,17 +369,21 @@
       right: 80px;
       @include is-responsive {
         position: absolute;
-        top: -30px;
-        left: 50%;
+        top: -18px;
+        left: 65%;
         transform: translateX(4%);
-        width: 110.85px;
-        height: 106.33px;
+        width: 90px;
+        height: 86.33px;
       }
       p {
         @include font-line(19, 25);
         font-weight: 700;
         letter-spacing: 0.06em;
         color: #565225;
+        font-family: Zen Maru Gothic;
+        @include is-responsive {
+          @include font-line(13, 17);
+        }
       }
     }
   }
@@ -256,16 +396,22 @@
       margin: 0 auto;
       position: absolute;
       top: 0;
-      border: 1px solid #306FB2;
+      border: 1px solid #306fb2;
       border-radius: 20px;
       height: 440px;
       width: 975px;
       left: 50%;
       transform: translateX(-50%);
       top: 13px;
+      @include is-responsive {
+        width: calc(100% - 38px);
+      }
     }
     &__heading {
       background-color: #eee;
+      @include is-responsive {
+        @include font-line(15, 26);
+      }
     }
     &__banner {
       height: 320px;
@@ -274,6 +420,14 @@
       background-position: 50%;
       margin-top: 41.8px;
       padding-top: 66px;
+      @include is-responsive {
+        background: url(../../tiny/raw/sect_3-bg01-sp.png) no-repeat;
+        background-position: 50%;
+        height: 158px;
+        background-size: cover;
+        margin-top: 23px;
+        padding-top: 22px;
+      }
     }
     &__txt {
       p {
@@ -282,6 +436,9 @@
         letter-spacing: 0.03em;
         font-weight: 700;
         z-index: 2;
+        @include is-responsive {
+          @include font-line(14, 14);
+        }
       }
       & p:first-child {
         font-family: Roboto Slab;
@@ -293,6 +450,10 @@
         display: inline-block;
         position: relative;
         left: 12%;
+        @include is-responsive {
+          @include font-line(6, 6);
+          left: 6%;
+        }
       }
       & p:nth-child(2) {
         display: inline-block;
@@ -301,6 +462,11 @@
         left: 13px;
         top: 30px;
         left: 13%;
+        @include is-responsive {
+          letter-spacing: 0.03em;
+          left: 10%;
+          top: 84%;
+        }
       }
       & p:nth-child(3) {
         @include font-line(35, 88);
@@ -311,12 +477,21 @@
         top: 70px;
         transform: rotate(-5deg);
         left: 13.5%;
+        @include is-responsive {
+          @include font-line(14, 14);
+          left: 11%;
+          top: 204%;
+        }
       }
       & p:nth-child(4) {
         top: 171px;
         position: absolute;
         left: 25px;
         left: 13.5%;
+        @include is-responsive {
+          top: 324%;
+          left: 11%;
+        }
       }
     }
   }

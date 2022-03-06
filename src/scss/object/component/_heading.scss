@@ -138,7 +138,9 @@
             top: 17%;
             border: 2px solid #707070;
             @include is-responsive {
-              top: 0%;
+              top: -5px;
+              width: 2.37px;
+              height: 3.37px;
             }
           }
         }
