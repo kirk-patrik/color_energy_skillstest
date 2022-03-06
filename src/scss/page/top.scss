@@ -1,8 +1,14 @@
 @import "../core/mixins/*";
 @import "../core/root/_variables";
 .sect_3 {
+  position: relative;
   background-color: #eeeeee;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
+  &-bg02 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
   &__header {
     p:first-child {
       margin-bottom: 9px;
@@ -124,10 +130,200 @@
       background-color: #eee;
     }
   }
+  .change {
+    max-width: 980px;
+    margin: 76px auto 73px;
+    text-align: center;
+    border: 1px solid #306fb2;
+    border-radius: 20px;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::before {
+      background-color: #eee;
+      height: 6px;
+      width: 40px;
+      bottom: -3px;
+    }
+    &::after {
+      border: 1px solid #306fb2;
+      border-bottom: transparent;
+      border-left: transparent;
+      border-radius: 0 2.5rem 0 2.5rem;
+      bottom: -21px;
+      height: 21.3px;
+      transform: translateX(-89%);
+      width: 23px;
+    }
+    span {
+      position: absolute;
+      top: -25px;
+      right: 33.2px;
+      background: #eee;
+      width: 136px;
+    }
+    p {
+      font-family: Zen Maru Gothic;
+      @include font-line(26, 64);
+      letter-spacing: 0;
+      font-weight: 700;
+    }
+  }
+  .frame {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      .col {
+        &:first-child {
+          margin-left: auto;
+          padding-right: 53px;
+          img {
+            width: 486px;
+          }
+        }
+        &:last-child {
+          margin-right: auto;
+          img {
+            width: 192px;
+            margin-top: 30px;
+          }
+        }
+        .image__container {
+          position: relative;
+          left: -26px;
+        }
+        .image__txt {
+          @include font-line(18, 18);
+          font-family: Zen Maru Gothic;
+          font-weight: 700;
+          letter-spacing: 0.03em;
+          color: #306fb2;
+          margin-top: 18px;
+          span {
+            font-family: Roboto Slab;
+            font-weight: 600;
+            @include font-line(25, 25);
+          }
+        }
+      }
+    }
+    &__content02 {
+      background: url(../../tiny/raw/sect_6-img02.png) no-repeat;
+      height: 119.11px;
+      width: 124.16px;
+      background-size: cover;
+      background-position: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      right: 80px;
+      @include is-responsive {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(4%);
+        width: 110.85px;
+        height: 106.33px;
+      }
+      p {
+        @include font-line(19, 25);
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        color: #565225;
+      }
+    }
+  }
+  .started {
+    margin: 23px 0 190px;
+    position: relative;
+    &::after {
+      content: "";
+      max-width: 975px;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      border: 1px solid #306FB2;
+      border-radius: 20px;
+      height: 440px;
+      width: 975px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 13px;
+    }
+    &__heading {
+      background-color: #eee;
+    }
+    &__banner {
+      height: 320px;
+      background: url(../../tiny/raw/sect_3-bg01.png) no-repeat;
+      background-size: cover;
+      background-position: 50%;
+      margin-top: 41.8px;
+      padding-top: 66px;
+    }
+    &__txt {
+      p {
+        font-family: Zen Maru Gothic;
+        @include font-line(33, 33);
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        z-index: 2;
+      }
+      & p:first-child {
+        font-family: Roboto Slab;
+        @include font-line(17, 17);
+        letter-spacing: 0.06em;
+        font-weight: 600;
+        color: #306fb2;
+        transform: rotateZ(-18deg);
+        display: inline-block;
+        position: relative;
+        left: 12%;
+      }
+      & p:nth-child(2) {
+        display: inline-block;
+        transform: rotate(-9deg);
+        position: absolute;
+        left: 13px;
+        top: 30px;
+        left: 13%;
+      }
+      & p:nth-child(3) {
+        @include font-line(35, 88);
+        letter-spacing: 0.064em;
+        display: inline-block;
+        left: 25px;
+        position: absolute;
+        top: 70px;
+        transform: rotate(-5deg);
+        left: 13.5%;
+      }
+      & p:nth-child(4) {
+        top: 171px;
+        position: absolute;
+        left: 25px;
+        left: 13.5%;
+      }
+    }
+  }
 }
 .sect_4 {
   background-color: #f8f8f8;
-  padding: 100px 0 0;
+  padding: 55.53px 0 0;
   &__header {
     p:first-child {
       margin-bottom: 13px;
@@ -286,7 +482,7 @@
       @include font-line(34);
       &::before,
       &::after {
-        width: 30%;
+        width: 33%;
       }
     }
   }

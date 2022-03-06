@@ -1,7 +1,8 @@
 .c-circle {
   &01,
   &02,
-  &03 {
+  &03,
+  &04 {
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -22,43 +23,58 @@
     color: #fff;
     padding-bottom: 5px;
     @include is-responsive {
-        width: 81px;
-        height: 81px;
-        padding-bottom: 0;
+      width: 81px;
+      height: 81px;
+      padding-bottom: 0;
     }
     span {
-        @include font-line(12, 12);
-        letter-spacing: .03em;
-        @include is-responsive {
-            @include font-line(11, 11);
-        }
+      @include font-line(12, 12);
+      letter-spacing: 0.03em;
+      @include is-responsive {
+        @include font-line(11, 11);
+      }
     }
     & span:last-child {
-        @include font-line(34, 34);
-        letter-spacing: .06em;
-        display: block;
-        padding-top: 5px;
-        @include is-responsive {
-            @include font-line(32, 32);
-        }
+      @include font-line(34, 34);
+      letter-spacing: 0.06em;
+      display: block;
+      padding-top: 5px;
+      @include is-responsive {
+        @include font-line(32, 32);
+      }
     }
   }
 
   &03 {
-   width: 96px;
-   height: 96px;
-   border: 1px solid #fff;
-   text-align: center;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-family: Zen Maru Gothic;
-   @include font-line(14, 19);
-   letter-spacing: 0;
-   @include is-responsive {
-     width: 58px;
-     height: 58px;
-     @include font-line(9, 11);
-   }
+    width: 96px;
+    height: 96px;
+    border: 1px solid #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Zen Maru Gothic;
+    @include font-line(14, 19);
+    letter-spacing: 0;
+    @include is-responsive {
+      width: 58px;
+      height: 58px;
+      @include font-line(9, 11);
+    }
+  }
+
+  &04 {
+    width: 112px;
+    height: 112px;
+    background-color: #FFD500;
+    color: #565225;
+    @include font-line(17, 28);
+    letter-spacing: .02em;
+    font-family: Zen Maru Gothic;
+    position: absolute;
+    top: -56px;
+    z-index: 2;
+    right: 29px;
+    transform: rotate(15deg);
   }
 }

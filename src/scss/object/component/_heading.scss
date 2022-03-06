@@ -19,6 +19,8 @@
       }
       &--line {
         position: relative;
+        max-width: 980px;
+        margin: 0 auto;
         &::after,
         &::before {
           background-color: #707070;
@@ -48,7 +50,7 @@
           left: 0;
           width: 100%;
           background-color: $color-secondary;
-          opacity: .5;
+          opacity: 0.5;
         }
       }
       .blue {
@@ -85,11 +87,61 @@
     text-align: center;
     &__main {
       @include font-line(15, 26);
-      letter-spacing: .06em;
+      letter-spacing: 0.06em;
       @include is-responsive {
         text-align: left;
         @include font-line(12, 20);
         padding: 0 14px;
+      }
+    }
+    &__sub {
+      @include font-line(26, 26);
+      letter-spacing: 0.02em;
+      font-weight: 700;
+      font-family: Zen Maru Gothic;
+      z-index: 2;
+      max-width: 616px;
+      margin: 0 auto;
+      position: relative;
+      .yellow,
+      .blue {
+        position: relative;
+        &::before {
+          content: "";
+          height: 8px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: $color-secondary;
+          opacity: 0.5;
+        }
+      }
+      .blue {
+        &::before {
+          background-color: $color-tertiary;
+          opacity: 0.2;
+        }
+      }
+      .isCircle {
+        span {
+          position: relative;
+          display: inline-block;
+          &::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 17%;
+            border: 2px solid #707070;
+            @include is-responsive {
+              top: 0%;
+            }
+          }
+        }
       }
     }
   }
@@ -99,10 +151,10 @@
     text-align: center;
     &__main {
       @include font-line(34, 54);
-      letter-spacing: .064em;
+      letter-spacing: 0.064em;
       @include is-responsive {
         @include font-line(18, 28);
-        letter-spacing: .02em;
+        letter-spacing: 0.02em;
       }
     }
   }

@@ -94,7 +94,75 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                 </div>
             </div>
         </div>
+        <div class="change">
+            <span>
+                <img src="<?= resource('img', 'raw/change_word.svg') ?>" alt="">
+            </span>
+            <p>いつもの１杯をスカイウォーターのグレープフルーツ味にかえよう</p>
+        </div>
+        <div class="frame">
+            <div class="row">
+                <div class="col">
+                    <img src="<?= resource('img', 'raw/sect_3-img02.png') ?>" alt="">
+                </div>
+                <div class="col">
+                    <div class="image__container">
+                        <img src="<?= resource('img', 'raw/sect_3-img03.png') ?>" alt="">
+                        <p class="image__txt">
+                            クエン酸<span>3,000</span>mg配合
+                        </p>
+                    </div>
+                    <div class="frame__content frame__content02">
+                        <p>疲労感<br>
+                            軽減</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="started">
+        <p class="c-heading02 c-heading02__sub started__heading">毎日のクエン酸習慣で日常の疲労感を軽減</p>
+        <div class="started__banner">
+            <div class="l-wrap">
+                <div class="started__txt">
+                    <p>Let’s get started !</p>
+                    <p>わたしに合ったスタイルで</p>
+                    <p class="c-heading02__sub"><span class="blue isCircle">#疲労感軽減</span>ルーティンを</p>
+                    <p>はじめよう!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-content03">
+        <p class="c-circle04">
+            期間限定<br>
+            公開中
+        </p>
+        <a href="#" class="p-content03__btn">詳しくはこちら</a>
+        <div class="row">
+            <div class="col">
+                <div class="frame">
+                    <img src="<?= resource('img', 'raw/filming_schedule.png') ?>" alt="">
+                    <span>撮影予定</span>
+                </div>
+                <div class="para01">
+                    <p>
+                        SkyWater<br>
+                        <span>アンバサダー</span>
+                    </p>
+                    <p>加藤ローサ<span>さん</span></p>
+                </div>
+                <div class="para02">
+                    <p>ローサさんが日頃気を付けている</p>
+                    <p>ルーティン<span>とは？</span></p>
+                </div>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+    <img src="<?= resource('img', 'raw/sect_3-bg02.png') ?>" class="sect_3-bg02" alt="">
 </section>
 <section class="sect_4" id="sect_4">
     <div class="l-wrap">
