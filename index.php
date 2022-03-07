@@ -1,6 +1,66 @@
 <?php
 require('app/functions.php');
 includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' => ['page/top.css']]) ?>
+<section class="sect_1" id="sect_1">
+    <div class="l-wrap">
+        <img class="multi-skywater" src="<?= resource('img', 'raw/sect_1-img.png') ?>" alt="">
+        <p class="c-heading04 sect_1__heading">ミネラル成分と水分をすばやく<br class="u-d-n-laptop">補給できる<br class="u-d-n-responsive">糖類控えめの<br class="u-d-n-laptop">ハイポトニック飲料<br class="u-d-n-laptop">「スカイウォーター」</p>
+        <div class="sect_1__content01">
+            <div class="img01">
+                <img src="<?= resource('img', 'raw/sect_1-img01.png') ?>" alt="">
+            </div>
+            <div class="img02">
+                <img src="<?= resource('img', 'raw/sect_3-img03.png') ?>" alt="">
+            </div>
+            <p class="txt01">クエン酸の働きで<br class="u-d-n-laptop"> 疲労感軽減!</p>
+            <p class="txt02">
+                グレープフルーツ味は継続的な飲用で日常生活や<br class="u-d-n-responsive">
+                運動後の疲労感を軽減するクエン酸(機能性関与成分)が<br class="u-d-n-responsive">
+                3,000mg入った機能性表示食品です。
+            </p>
+            <div class="btn__area">
+                <a href="#" class="c-button c-button--m">詳しくはこちら</a>
+            </div>
+        </div>
+        <div class="p-content03 p-content03--01">
+            <p class="c-circle04 u-d-n-responsive">
+                期間限定<br>
+                公開中
+            </p>
+            <a href="#" class="p-content03__btn u-d-n-responsive">詳しくはこちら</a>
+            <div class="row">
+                <div class="col">
+                    <div class="frame">
+                        <img src="<?= resource('img', 'raw/filming_schedule.png') ?>" alt="">
+                        <span>撮影予定</span>
+                    </div>
+                    <div class="para01">
+                        <p>
+                            SkyWater<br>
+                            <span>アンバサダー</span>
+                        </p>
+                        <p>加藤ローサ<span>さん</span></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="para02">
+                        <p>
+                            ローサさんが日頃気を付けている<br class="u-d-n-laptop">ルーティンとは？
+                        </p>
+                        <p>SPECIAL<br class="u-d-n-laptop"> DIALOG
+                        <span class="c-circle04 u-d-n-laptop">
+                                期間限定<br>
+                                公開中
+                            </span>
+                        </p>
+                    </div>
+                    <a href="#" class="p-content03__btn-sp u-d-n-laptop">詳しくはこちら</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="<?= resource('img', 'raw/sect_3-bg02.png') ?>" class="sect_3-bg02" alt="">
+</section>
 <section class="sect_3" id="sect_3">
     <div class="l-wrap">
         <div class="sect_3__header">

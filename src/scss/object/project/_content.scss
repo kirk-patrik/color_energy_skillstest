@@ -582,6 +582,9 @@
       letter-spacing: 0;
       margin-top: 26px;
       @include font-line(12, 12);
+      @include is-max(500px) {
+        width: 240px;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -754,6 +757,55 @@
           @include font-line(37, 37);
           @include is-responsive {
             @include font-line(24, 24);
+          }
+        }
+      }
+    }
+    &--01 {
+      @include is-responsive {
+        max-width: 100%;
+      }
+      .para02 {
+        margin-left: 23px;
+        & p:first-child {
+          @include font-line(18, 18);
+          @include is-max(1200px) {
+            font-size: 16px;
+          }
+          @include is-responsive {
+            margin-right: 20px;
+            @include font-line(13, 22);
+            letter-spacing: 0.04em;
+            padding-left: 0px;
+          }
+        }
+        & p:last-child {
+          @include font-line(52, 26);
+          letter-spacing: 0.01em;
+          font-family: Quicksand;
+          font-weight: 600;
+          @include is-max(1200px) {
+            font-size: 46px;
+          }
+          @include is-responsive {
+            @include font-line(34, 38);
+            letter-spacing: 0.06em;
+            text-align: left;
+            padding-left: 8px;
+            margin-top: 7px;
+            span {
+              @include font-line(13, 21);
+              letter-spacing: 0.02em;
+              text-align: center;
+              width: 86px !important;
+              height: 86px !important;
+              top: -5px !important;
+              right: -6px !important;
+            }
+          }
+          &::after,
+          &::before {
+            content: unset;
           }
         }
       }

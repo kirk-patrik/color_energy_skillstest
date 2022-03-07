@@ -160,4 +160,13 @@
       }
     }
   }
+  &04 {
+    font-family: Zen Maru Gothic;
+    @include font-line(26, 64);
+    letter-spacing: .06em;
+    font-weight: 700;
+    @include is-responsive {
+      @include font-line(18, 32);
+    }
+  }
 }

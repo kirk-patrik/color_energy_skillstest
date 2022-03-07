@@ -77,13 +77,33 @@
     }
   }
   &--m {
+    width: 168px;
+    min-height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #306FB2;
+    border-radius: 100px;
+    margin: 0 auto;
+    @include font-line(14, 14);
+    letter-spacing: 0;
+    font-weight: 700;
+    padding-right: 3px;
+    box-shadow: unset;
     @include is-responsive {
-      height: 45px;
-      @include font-line(16, 16);
+      min-height: 38px;
+      @include font-line(12, 12);
     }
-    @include is-laptop {
-      height: 50px;
-      @include font-line(20, 20);
+    &::after {
+      background: url(../tiny/raw/btn_arrow_after_white.svg) no-repeat;
+      border: 0;
+      content: "";
+      transform: rotate(0);
+      right: 10px;
+      @include is-responsive {
+        transform: rotate(0) scale(0.6);
+      }
     }
   }
   &--s {
