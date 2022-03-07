@@ -515,10 +515,28 @@
     color: #fff;
     text-align: center;
     position: relative;
+    @include is-responsive {
+      max-width: calc(100% - 32px);
+      padding: 12px 12px 21px;
+    }
     .row {
+      display: flex;
+      @include is-responsive {
+        flex-direction: column;
+      }
       .col {
         display: flex;
         align-items: center;
+        @include is-responsive {
+          &:first-child {
+            margin-bottom: 21px;
+            justify-content: center;
+          }
+          &:last-child {
+            position: relative;
+            flex-direction: column;
+          }
+        }
       }
     }
     &__btn {
@@ -535,7 +553,7 @@
       color: #306fb2;
       font-weight: 700;
       letter-spacing: 0;
-      font-size: 14px;
+      @include font-line(14, 14);
       padding: 0 0 0 21px;
       &::after {
         content: "";
@@ -550,10 +568,41 @@
         background-position: 50%;
       }
     }
+    &__btn-sp {
+      width: 100%;
+      min-height: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      border-radius: 100px;
+      position: relative;
+      color: #306fb2;
+      font-weight: 700;
+      letter-spacing: 0;
+      margin-top: 26px;
+      @include font-line(12, 12);
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 13px;
+        background: url(../tiny/raw/btn_arrow_after.svg) no-repeat;
+        background-size: contain;
+        background-position: 50%;
+      }
+    }
     .frame {
       position: relative;
       width: 180px;
       margin: 0 19px 0 0;
+      @include is-responsive {
+        width: 144px;
+        margin: 0 15px 0 0;
+      }
       span {
         position: absolute;
         left: 50%;
@@ -586,6 +635,9 @@
       & p:first-child {
         @include font-line(14, 14);
         position: relative;
+        @include is-responsive {
+          @include font-line(11, 11);
+        }
         &::after,
         &::before {
           content: "";
@@ -595,6 +647,10 @@
           background-color: #ffffff;
           border-radius: 3px;
           top: 50%;
+          @include is-responsive {
+            width: 1.6px;
+            height: 19px;
+          }
         }
         &::before {
           left: 0;
@@ -608,26 +664,59 @@
           @include font-line(13, 13);
           padding-top: 9px;
           display: inline-block;
+          @include is-responsive {
+            @include font-line(11, 11);
+          }
         }
       }
       & p:last-child {
         margin-top: 13px;
         @include font-line(18, 18);
+        @include is-responsive {
+          @include font-line(14, 14);
+        }
         span {
           @include font-line(12, 12);
+          @include is-responsive {
+            @include font-line(9, 9);
+          }
         }
       }
     }
     .para02 {
       margin-left: 47px;
+      @include is-responsive {
+        margin-left: 0;
+        width: 100%;
+        position: relative;
+      }
       p {
         letter-spacing: 0;
       }
       & p:first-child {
         @include font-line(24, 24);
+        @include is-responsive {
+          @include font-line(15, 25);
+          letter-spacing: 0.04em;
+          text-align: left;
+          padding-left: 12px;
+          display: flex;
+          justify-content: center;
+          span {
+            position: relative;
+            text-align: center;
+            margin-left: 22px;
+            right: 10px;
+          }
+        }
       }
       & p:last-child {
         position: relative;
+        @include is-responsive {
+          width: 240px;
+          margin: 0 auto;
+          margin-top: -4px;
+        }
         &::after,
         &::before {
           content: "";
@@ -638,17 +727,34 @@
           border-radius: 3px;
           top: 50%;
           transform: translateY(-50%);
+          @include is-responsive {
+            height: 2px;
+            width: 18px;
+          }
         }
         &::before {
           left: -6px;
+          @include is-responsive {
+            left: 0;
+          }
         }
         &::after {
           right: -6px;
+          @include is-responsive {
+            right: 0;
+          }
         }
         margin-top: 20px;
         @include font-line(38, 38);
+        @include is-responsive {
+          @include font-line(25, 25);
+          letter-spacing: -0.08em;
+        }
         span {
           @include font-line(37, 37);
+          @include is-responsive {
+            @include font-line(24, 24);
+          }
         }
       }
     }

@@ -4,10 +4,23 @@
   position: relative;
   background-color: #eeeeee;
   padding-bottom: 20px;
+  @include is-responsive {
+    &::after {
+      background-color: #f8f8f8;
+      bottom: 0;
+      content: "";
+      height: 160px;
+      position: absolute;
+      width: 100%;
+    }
+  }
   &-bg02 {
     position: absolute;
     bottom: 0;
     left: 0;
+    @include is-responsive {
+      bottom: 156px;
+    }
   }
   &__header {
     p:first-child {
@@ -390,6 +403,9 @@
   .started {
     margin: 23px 0 190px;
     position: relative;
+    @include is-responsive {
+      margin-bottom: 75px;
+    }
     &::after {
       content: "";
       max-width: 975px;
@@ -405,12 +421,15 @@
       top: 13px;
       @include is-responsive {
         width: calc(100% - 38px);
+        height: 228px;
+        top: 31px;
       }
     }
     &__heading {
       background-color: #eee;
       @include is-responsive {
         @include font-line(15, 26);
+        width: 188.94px;
       }
     }
     &__banner {

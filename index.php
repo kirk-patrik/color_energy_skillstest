@@ -122,7 +122,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                 </div>
             </div>
             <div class="u-d-n-laptop" style="text-align: center; margin-top: 21.7px;">
-            <img src="<?= resource('img', 'raw/arrow-down-sp.svg') ?>" alt="">
+                <img src="<?= resource('img', 'raw/arrow-down-sp.svg') ?>" alt="">
             </div>
         </div>
     </div>
@@ -133,18 +133,18 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                 <div class="started__txt">
                     <p>Let’s get started !</p>
                     <p>わたしに合ったスタイルで</p>
-                    <p class="c-heading02__sub"><span class="blue isCircle">#疲労感軽減</span>ルーティンを</p>
+                    <p class="c-heading02__sub"><span class="blue">#</span><span class="blue isCircle">疲労感軽減</span>ルーティンを</p>
                     <p>はじめよう!</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <div class="p-content03">
-        <p class="c-circle04">
+    <div class="p-content03">
+        <p class="c-circle04 u-d-n-responsive">
             期間限定<br>
             公開中
         </p>
-        <a href="#" class="p-content03__btn">詳しくはこちら</a>
+        <a href="#" class="p-content03__btn u-d-n-responsive">詳しくはこちら</a>
         <div class="row">
             <div class="col">
                 <div class="frame">
@@ -158,16 +158,22 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                     </p>
                     <p>加藤ローサ<span>さん</span></p>
                 </div>
-                <div class="para02">
-                    <p>ローサさんが日頃気を付けている</p>
-                    <p>ルーティン<span>とは？</span></p>
-                </div>
             </div>
             <div class="col">
-
+                <div class="para02">
+                    <p>
+                        ローサさんが<br class="u-d-n-laptop">日頃気を付けている
+                        <span class="c-circle04">
+                            期間限定<br>
+                            公開中
+                        </span>
+                    </p>
+                    <p>ルーティン<span>とは？</span></p>
+                </div>
+                <a href="#" class="p-content03__btn-sp u-d-n-laptop">詳しくはこちら</a>
             </div>
         </div>
-    </div> -->
+    </div>
     <img src="<?= resource('img', 'raw/sect_3-bg02.png') ?>" class="sect_3-bg02" alt="">
 </section>
 <section class="sect_4" id="sect_4">

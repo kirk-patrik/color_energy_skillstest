@@ -66,15 +66,21 @@
   &04 {
     width: 112px;
     height: 112px;
-    background-color: #FFD500;
+    background-color: #ffd500;
     color: #565225;
     @include font-line(17, 28);
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     font-family: Zen Maru Gothic;
     position: absolute;
     top: -56px;
     z-index: 2;
     right: 29px;
     transform: rotate(15deg);
+    @include is-responsive {
+      width: 69px;
+      height: 69px;
+      top: -16px;
+      font-size: 11px;
+    }
   }
 }
