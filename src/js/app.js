@@ -12,4 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('.scrollTop').addEventListener('click', () => {
         scrollToTop();
     });
+
+    let hamburgerMenu = document.querySelector('.hamburger__menu');
+    let spMenu = document.querySelector('.l-header__nav_menu-sp');
+
+    hamburgerMenu.addEventListener('click', e => {
+        e.target.parentElement.classList.toggle('isActive');
+        spMenu.classList.toggle('isActive');
+    });
 });

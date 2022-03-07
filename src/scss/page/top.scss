@@ -4,7 +4,9 @@
   background-color: #eeefee;
   position: relative;
   padding-bottom: 15px;
+  padding-top: 110px;
   @include is-responsive {
+    padding-top: 0;
     &::after {
       background-color: #f8f8f8;
       bottom: 0;
@@ -145,6 +147,7 @@
   }
 }
 .sect_2 {
+  padding-top: 70px;
   @include is-responsive {
     padding-top: 62px;
   }

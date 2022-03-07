@@ -15,6 +15,8 @@
     <!-- end font -->
     <!-- style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="<?= resource('css', 'style.css') ?>" />
     <link rel="stylesheet" href="<?= resource('iconfont', 'iconfont.css') ?>" />
     <?= resources('css', isset($headCSS) ? $headCSS : '', true) ?>
@@ -22,10 +24,107 @@
 </head>
 
 <body class="page">
-    <header class="page__top">
-        <!-- header start here -->
-        <nav></nav>
-        <!-- header end here -->
+    <header class="l-header page__top">
+        <div class="l-header__top">
+            <h1 class="logo">LOGO</h1>
+        </div>
+        <div class="l-header__nav">
+            <div class="l-wrap">
+                <ul class="l-header__nav_menu u-d-n-responsive">
+                    <li class="nav_item">
+                        <a href="#">4つの特徴</a>
+                    </li>
+                    <li>
+                        <span class="separator">／</span>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">#疲労感軽減ルーティン </a>
+                    </li>
+                    <li>
+                        <span class="separator">／</span>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">タイプ別診断</a>
+                    </li>
+                    <li>
+                        <span class="separator">／</span>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">選べる3タイプ </a>
+                    </li>
+                    <li>
+                        <span class="separator">／</span>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">Q&A</a>
+                    </li>
+                    <li>
+                        <span class="separator">／</span>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">お問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="hamburger__menu u-d-n-laptop">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="l-header__nav_menu l-header__nav_menu-sp">
+                <li class="nav_item">
+                    <a href="#">4つの特徴</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">#疲労感軽減ルーティン</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">タイプ別診断</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">選べる3タイプ</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">Q&A</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">お問い合わせ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="l-header__mainVisual">
+            <div class="l-header__row">
+                <img class="multi-skywater u-d-n-responsive" src="<?= resource('img', 'raw/sect_1-img.png') ?>" alt="">
+                <div class="l-header__col">
+                    <div class="l-header__col_left">
+                        <img src="<?= resource('img', 'raw/mv-bg01.svg'); ?>" alt="">
+                    </div>
+                    <ul class="slick-dots">
+                        <li class="slick-dots-item isActive"></li>
+                        <li class="slick-dots-item"></li>
+                        <li class="slick-dots-item"></li>
+                        <li class="slick-dots-item"></li>
+                    </ul>
+                </div>
+                <div class="l-header__col">
+                    <ul class="mv__slider">
+                        <li>
+                            <img src="<?= resource('img', 'raw/slider-img01.png'); ?>" alt="">
+                        </li>
+                        <li>
+                            <img src="<?= resource('img', 'raw/slider-img02.png'); ?>" alt="">
+                        </li>
+                        <li>
+                            <img src="<?= resource('img', 'raw/slider-img03.png'); ?>" alt="">
+                        </li>
+                        <li>
+                            <img src="<?= resource('img', 'raw/slider-img04.png'); ?>" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main class="page__center">
         <!-- content start here -->

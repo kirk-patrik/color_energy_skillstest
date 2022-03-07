@@ -3,9 +3,9 @@ require('app/functions.php');
 includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' => ['page/top.css']]) ?>
 <section class="sect_1" id="sect_1">
     <div class="l-wrap">
-        <img class="multi-skywater" src="<?= resource('img', 'raw/sect_1-img.png') ?>" alt="">
+        <img class="multi-skywater u-d-n-laptop" src="<?= resource('img', 'raw/sect_1-img.png') ?>" alt="">
         <p class="c-heading04 sect_1__heading">ミネラル成分と水分をすばやく<br class="u-d-n-laptop">補給できる<br class="u-d-n-responsive">糖類控えめの<br class="u-d-n-laptop">ハイポトニック飲料<br class="u-d-n-laptop">「スカイウォーター」</p>
-        <div class="sect_1__content01">
+        <div class="sect_1__content01" data-aos="fade-up" data-aos-duration="1000">
             <div class="img01">
                 <img src="<?= resource('img', 'raw/sect_1-img01.png') ?>" alt="">
             </div>
@@ -22,7 +22,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                 <a href="#" class="c-button c-button--m">詳しくはこちら</a>
             </div>
         </div>
-        <div class="p-content03 p-content03--01">
+        <div class="p-content03 p-content03--01" data-aos="fade-up" data-aos-duration="1000">
             <p class="c-circle04 u-d-n-responsive">
                 期間限定<br>
                 公開中
