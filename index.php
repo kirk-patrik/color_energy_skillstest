@@ -48,7 +48,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                             ローサさんが日頃気を付けている<br class="u-d-n-laptop">ルーティンとは？
                         </p>
                         <p>SPECIAL<br class="u-d-n-laptop"> DIALOG
-                        <span class="c-circle04 u-d-n-laptop">
+                            <span class="c-circle04 u-d-n-laptop">
                                 期間限定<br>
                                 公開中
                             </span>
@@ -60,6 +60,93 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
         </div>
     </div>
     <img src="<?= resource('img', 'raw/sect_3-bg02.png') ?>" class="sect_3-bg02" alt="">
+</section>
+<section class="sect_2" id="sect_2">
+    <div class="l-wrap">
+        <div class="sect_2__header">
+            <p class="c-heading01 c-heading01__main">
+                features
+            </p>
+            <p class="c-heading01 c-heading01__sub c-heading01__sub--line">
+                スカイウォーター<br class="u-d-n-laptop"><span class="yellow isCircle">4つの特徴</span>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="c-circle01">
+                    特徴
+                    <span>1</span>
+                </p>
+                <p class="heading">糖類控えめ！</p>
+                <div class="flex">
+                    <p class="txt01">スカイウォーターは、3つのタイプとも糖類控えめ<span>※</span>が特徴です。<br class="u-d-n-responsive">
+                        だから糖類の摂り過ぎが気になる方にも安心して水分補給ができます。</p>
+                    <img src="<?= resource('img', 'raw/sect_2-img01.png') ?>" alt="">
+                </div>
+                <p class="txt02">※水1ℓ溶解時(グレープフルーツ味 10g/グレープ味 11g/ライチ味 0g)<br>
+                    ※一般的なスポーツドリンクパウダーのおおよそ4分の1
+                </p>
+            </div>
+            <div class="col">
+                <p class="c-circle01">
+                    特徴
+                    <span>2</span>
+                </p>
+                <p class="heading">すばやく水分補給！</p>
+                <div class="flex">
+                    <p class="txt01">
+                        スカイウォーターは、3つのタイプとも<br class="u-d-n-responsive">
+                        ハイポトニック飲料※です。<br class="u-d-n-responsive">
+                        熱中症対策のための水分・塩分補給が出来ます。
+
+                    </p>
+                    <img src="<?= resource('img', 'raw/sect_2-img02.png') ?>" alt="">
+                </div>
+                <p class="txt02">※ヒトの安静時の体液よりも低い浸透圧（=ハイポトニック）ですので、運動による発汗などで体液が薄くなっている状態においては水分が素早く吸収されます。
+            </div>
+            <div class="col">
+                <p class="c-circle01">
+                    特徴
+                    <span>3</span>
+                </p>
+                <p class="heading">選べる3タイプ！</p>
+                <div class="flex flex-start">
+                    <p class="txt01">
+                        スカイウォーターは、選べる3つのタイプ。発汗時やダイエット中の水分補給に、摂りたい成分やお好みの風味で、お選びいただけます。
+                    </p>
+                    <div class="flex flex-col">
+                        <img src="<?= resource('img', 'raw/sect_2-img03.png') ?>" alt="">
+                        <a href="#" class="c-button c-button--m">3つのタイプ紹介はこちら</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <p class="c-circle01">
+                    特徴
+                    <span>4</span>
+                </p>
+                <p class="heading">おトクな粉末タイプ！</p>
+                <div class="flex flex-start">
+                    <div>
+                        <p class="txt01">
+                            スカイウォーターは1箱で、たっぷり10ℓ※だから、とても経済的にお飲みいただけます。
+                        </p>
+                        <p class="txt02">
+                            ※1箱は、1ℓ用小袋×2袋×5コ入りです。
+                        </p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="speech">
+                            1箱で、たっぷり10ℓ分!
+                            <img src="<?= resource('img', 'raw/speech.svg') ?>" alt="">
+                        </p>
+                        <img src="<?= resource('img', 'raw/sect_2-img04.png') ?>" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="<?= resource('img', 'raw/sect_2-bg01.png') ?>" alt="">
 </section>
 <section class="sect_3" id="sect_3">
     <div class="l-wrap">

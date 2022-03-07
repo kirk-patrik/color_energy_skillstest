@@ -4,6 +4,16 @@
   background-color: #eeefee;
   position: relative;
   padding-bottom: 15px;
+  @include is-responsive {
+    &::after {
+      background-color: #f8f8f8;
+      bottom: 0;
+      content: "";
+      height: 160px;
+      position: absolute;
+      width: 100%;
+    }
+  }
   &__heading {
     text-align: center;
     line-height: 1.7;
@@ -22,6 +32,7 @@
     @include is-responsive {
       padding: 18px 29px 40.4px;
       margin-top: 62px;
+      margin-bottom: 79px;
     }
     &::after,
     &::before {
@@ -97,7 +108,7 @@
       @include is-responsive {
         @include font-line(18);
         line-height: 1.678;
-        letter-spacing: .04em;
+        letter-spacing: 0.04em;
       }
     }
     .txt02 {
@@ -133,6 +144,233 @@
     }
   }
 }
+.sect_2 {
+  @include is-responsive {
+    padding-top: 62px;
+  }
+  &__header {
+    p:first-child {
+      margin-bottom: 9px;
+      @include is-responsive {
+        margin-bottom: 17px;
+      }
+    }
+    & p:last-child {
+      @include font-line(36, 87);
+      line-height: 2 !important;
+      .c-heading01__sub--line {
+        &::before,
+        &::after {
+          width: 19%;
+        }
+      }
+      .isCircle {
+        span {
+          &::before {
+            top: 9% !important;
+          }
+        }
+      }
+      @include is-responsive {
+        @include font-line(26, 45);
+      }
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin: 0 auto 60.8px;
+    padding: 79px 0 0;
+    @include is-responsive {
+      flex-direction: column;
+      padding: 39px 0 0;
+      margin-bottom: 60px;
+    }
+    .col {
+      position: relative;
+      width: 48%;
+      min-height: 340px;
+      border-radius: 20px;
+      border: 6px solid #ffd500;
+      padding: 37px 33px 40px;
+      @include is-responsive {
+        width: calc(100% - 14px);
+        margin: 0 auto;
+        padding: 22px 20px 26px;
+        min-height: auto;
+        &:nth-child(2) {
+          margin-top: 38px;
+        }
+      }
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin-top: 57px;
+        min-height: 318px;
+        @include is-responsive {
+          margin-top: 38px;
+          min-height: auto;
+        }
+        .txt01 {
+          width: 175px;
+          @include is-responsive {
+            width: 100%;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .flex {
+          margin-left: 10px;
+          @include is-responsive {
+            align-items: center;
+            margin-left: 0;
+            width: 100%;
+            img {
+              width: 135px;
+              margin-top: 19px;
+            }
+          }
+        }
+      }
+      &:nth-child(4) {
+        .txt02 {
+          margin-top: 13px;
+          width: 165px;
+          @include is-responsive {
+            width: 100%;
+          }
+        }
+        @include is-responsive {
+          .flex-col {
+            margin-top: 20px;
+            img {
+              width: 172px;
+            }
+          }
+        }
+      }
+      .heading {
+        @include font-line(26, 26);
+        font-family: Zen Maru Gothic;
+        text-align: center;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        padding-bottom: 25px;
+        border-bottom: 3px solid #ffd500;
+        margin-bottom: 26px;
+        @include is-responsive {
+          margin-bottom: 16px;
+          padding-bottom: 14px;
+          @include font-line(16, 16);
+        }
+      }
+      .txt01 {
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        @include font-line(15, 24);
+        @include is-responsive {
+          @include font-line(12, 20);
+        }
+        span {
+          @include font-line(12, 24);
+          @include is-responsive {
+            @include font-line(8, 20);
+          }
+        }
+      }
+      .txt02 {
+        @include font-line(12, 20);
+        font-weight: 400;
+        letter-spacing: 0;
+        margin-top: 22px;
+        @include is-responsive {
+          @include font-line(10, 18);
+          margin-top: 10px;
+        }
+      }
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & p:first-child {
+        width: 283px;
+        @include is-responsive {
+          width: 87%;
+        }
+        @include is-max(500px) {
+          width: 78%;
+        }
+      }
+      img {
+        width: 62.59px;
+        margin-right: 10px;
+        @include is-responsive {
+          width: 37.13px;
+          margin-right: 0;
+        }
+      }
+      &-start {
+        align-items: flex-start;
+        @include is-responsive {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      &-col {
+        align-items: flex-start;
+        flex-direction: column;
+        img {
+          width: 180px;
+          margin-right: 0;
+        }
+        a {
+          width: 188px !important;
+          @include font-line(12, 12);
+          padding-right: 15px;
+          margin-top: 24px;
+          @include is-responsive {
+            margin-top: 18px;
+            width: 100% !important;
+          }
+          @include is-max(500px) {
+            width: 230px !important;
+          }
+        }
+      }
+    }
+    .speech {
+      width: 100% !important;
+      text-align: center;
+      background-color: #ffd500;
+      min-height: 41px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      justify-content: center;
+      @include font-line(14, 14);
+      font-weight: 700;
+      letter-spacing: 0;
+      margin-bottom: 33px;
+      position: relative;
+      @include is-responsive {
+        min-height: 36.46px;
+        @include font-line(12, 12);
+        margin-bottom: 28.5px;
+      }
+      img {
+        position: absolute;
+        bottom: -12px;
+        width: 30px;
+        @include is-responsive {
+          width: 26px !important;
+          bottom: -9px;
+        }
+      }
+    }
+  }
+}
 .sect_3 {
   position: relative;
   background-color: #eeeeee;
@@ -146,6 +384,7 @@
       position: absolute;
       width: 100%;
     }
+    padding-top: 50px;
   }
   &-bg02 {
     position: absolute;
@@ -159,13 +398,20 @@
     p:first-child {
       margin-bottom: 9px;
       @include is-responsive {
-        margin-bottom: 17px;
+        margin-bottom: 22px;
       }
     }
     & p:last-child {
       @include font-line(34, 87);
       @include is-responsive {
         @include font-line(26, 45);
+        .isCircle {
+          span {
+            &::before {
+              top: -5px;
+            }
+          }
+        }
       }
     }
   }
@@ -655,6 +901,16 @@
     p:first-child {
       margin-bottom: 13px;
     }
+    & p:last-child {
+      line-height: 2;
+      .isCircle {
+        span {
+          &::before {
+            top: 10%;
+          }
+        }
+      }
+    }
   }
   &__header_sub {
     margin: 20px 0 40px;
@@ -807,6 +1063,25 @@
     }
     & p:last-child {
       @include font-line(34);
+      line-height: 2;
+      .isCircle {
+        span {
+          &::before {
+            top: 7%;
+          }
+        }
+      }
+      @include is-responsive {
+        @include font-line(26);
+        margin-top: 24px;
+        .isCircle {
+          span {
+            &::before {
+              top: -4px;
+            }
+          }
+        }
+      }
       &::before,
       &::after {
         width: 33%;

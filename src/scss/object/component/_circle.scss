@@ -11,6 +11,40 @@
     font-weight: 700;
     flex-direction: column;
   }
+  &01 {
+    width: 90px;
+    height: 90px;
+    border: 6px solid #FFD500;
+    @include font-line(15, 15);
+    font-family: Zen Maru Gothic;
+    letter-spacing: .06em;
+    text-align: center;
+    padding-bottom: 3px;
+    position: absolute;
+    top: -41px;
+    left: 17px;
+    background: #F8F8F8;
+    @include is-responsive {
+      width: 60px;
+      height: 60px;
+      left: -23px;
+      top: -24px;
+      @include font-line(10, 10);
+      border-width: 4px;
+      padding-bottom: 0;
+    }
+    span {
+      @include font-line(28, 11);
+      font-weight: 600;
+      font-family: Roboto Slab;
+      display: inline-block;
+      padding-top: 11px;
+      @include is-responsive {
+        @include font-line(18, 18);
+        padding-top: 3px;
+      }
+    }
+  }
   &02 {
     width: 90px;
     height: 90px;
