@@ -33,7 +33,7 @@
     <script>
         let homeslider = document.querySelector('.mv__slider');
         $(homeslider).slick({
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3000,
             infinite: true,
             fade: false,

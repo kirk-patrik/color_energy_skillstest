@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Roboto Slab;
+    font-family: 'Roboto Slab', serif;
     font-weight: 700;
     flex-direction: column;
   }
@@ -16,7 +16,7 @@
     height: 90px;
     border: 6px solid #FFD500;
     @include font-line(15, 15);
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic', sans-serif;;
     letter-spacing: .06em;
     text-align: center;
     padding-bottom: 3px;
@@ -36,7 +36,7 @@
     span {
       @include font-line(28, 11);
       font-weight: 600;
-      font-family: Roboto Slab;
+      font-family: 'Roboto Slab', serif;
       display: inline-block;
       padding-top: 11px;
       @include is-responsive {
@@ -87,7 +87,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic', sans-serif;;
     @include font-line(14, 19);
     letter-spacing: 0;
     @include is-responsive {
@@ -104,7 +104,7 @@
     color: #565225;
     @include font-line(17, 28);
     letter-spacing: 0.02em;
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic', sans-serif;;
     position: absolute;
     top: -56px;
     z-index: 2;

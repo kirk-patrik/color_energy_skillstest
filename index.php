@@ -72,7 +72,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
             </p>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1000">
                 <p class="c-circle01">
                     特徴
                     <span>1</span>
@@ -87,7 +87,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                     ※一般的なスポーツドリンクパウダーのおおよそ4分の1
                 </p>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1000">
                 <p class="c-circle01">
                     特徴
                     <span>2</span>
@@ -104,7 +104,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                 </div>
                 <p class="txt02">※ヒトの安静時の体液よりも低い浸透圧（=ハイポトニック）ですので、運動による発汗などで体液が薄くなっている状態においては水分が素早く吸収されます。
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1000">
                 <p class="c-circle01">
                     特徴
                     <span>3</span>
@@ -120,7 +120,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1000">
                 <p class="c-circle01">
                     特徴
                     <span>4</span>
@@ -164,7 +164,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
             </p>
         </div>
     </div>
-    <div class="p-content01">
+    <div class="p-content01" data-aos="fade-up" data-aos-duration="1000">
         <div class="l-wrap">
             <div class="p-content01__main">
                 <div class="p-content01__row">
@@ -203,7 +203,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
         </div>
     </div>
     <div class="l-wrap">
-        <div class="citric__acid">
+        <div class="citric__acid" data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
                 <div class="col">
                     <img src="<?= resource('img', 'raw/sect_3-img01.png') ?>" alt="">
@@ -218,7 +218,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
             </div>
             <p class="para para-sp u-d-n-laptop">クエン酸は柑橘類などに含まれる酸味成分で、活動エネルギー生産の中心的役割を担っています。継続的に摂取することで、 日常の生活や運動後の疲労感を軽減する働きがあることが報告されています。</p>
         </div>
-        <div class="recommended">
+        <div class="recommended" data-aos="fade-up" data-aos-duration="1000">
             <div class="recommended__row">
                 <p class="recommended__heading">こんなときに飲むのが<span>おすすめ</span></p>
                 <div class="recommended__col">
@@ -243,13 +243,13 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                 </div>
             </div>
         </div>
-        <div class="change">
+        <div class="change" data-aos="fade-up" data-aos-duration="1000">
             <span>
                 <img src="<?= resource('img', 'raw/change_word.svg') ?>" alt="">
             </span>
             <p>いつもの１杯をスカイウォーターの<br class="u-d-n-laptop">グレープフルーツ味にかえよう</p>
         </div>
-        <div class="frame">
+        <div class="frame" data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
                 <div class="col">
                     <img class="u-d-n-responsive" src="<?= resource('img', 'raw/sect_3-img02.png') ?>" alt="">
@@ -259,7 +259,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                     <div class="image__container">
                         <img src="<?= resource('img', 'raw/sect_3-img03.png') ?>" alt="">
                         <p class="image__txt">
-                            クエン酸<span>3,000</span>mg配合
+                            クエン酸<span>3,000</span><span>mg</span>配合
                         </p>
                     </div>
                     <div class="frame__content frame__content02">
@@ -273,7 +273,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
             </div>
         </div>
     </div>
-    <div class="started">
+    <div class="started" data-aos="fade-up" data-aos-duration="1000">
         <p class="c-heading02 c-heading02__sub started__heading">毎日のクエン酸習慣で<br class="u-d-n-laptop">日常の疲労感を軽減</p>
         <div class="started__banner">
             <div class="l-wrap">
@@ -286,7 +286,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
             </div>
         </div>
     </div>
-    <div class="p-content03">
+    <div class="p-content03" data-aos="fade-up" data-aos-duration="1000">
         <p class="c-circle04 u-d-n-responsive">
             期間限定<br>
             公開中
@@ -339,7 +339,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                 スタイルに合ったスカイウォーターグレープフルーツ味の飲み方を調べてみよう!
             </p>
         </div>
-        <div class="flow__frame">
+        <div class="flow__frame" data-aos="fade-up" data-aos-duration="1000">
             <img class="u-d-n-responsive" src="<?= resource('img', 'raw/sect_4-img01.png') ?>" alt="">
             <img class="u-d-n-laptop" src="<?= resource('img', 'raw/sect_4-img01-sp.png') ?>" alt="">
         </div>
@@ -372,7 +372,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
         ?>
         <div class="flow__cards">
             <?php foreach ($flowContent as $flow) : ?>
-                <div class="flow__type">
+                <div class="flow__type" data-aos="fade-up" data-aos-duration="1000">
                     <div class="c-circle02 flow__type_number">
                         <span>Type</span>
                         <span><?= $flow["type"] ?></span>
@@ -406,7 +406,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
             </p>
         </div>
         <div class="sect_5__main_content">
-            <div class="p-content02 p-content02--blue">
+            <div class="p-content02 p-content02--blue"  data-aos="fade-up" data-aos-duration="1000">
                 <div class="p-content02__heading">
                     <p>毎日の水分補給をしたい方に</p>
                     <img src="<?= resource('img', 'raw/sect_5-svg-skywater.svg') ?>" alt="">
@@ -507,7 +507,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                     </div>
                 </div>
             </div>
-            <div class="notification">
+            <div class="notification" data-aos="fade-up" data-aos-duration="1000">
                 <div class="notification__row">
                     <p class="notification__heading">届出表示</p>
                     <div class="notification__col">
@@ -524,7 +524,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                     </div>
                 </div>
             </div>
-            <div class="p-content02 p-content02--violet">
+            <div class="p-content02 p-content02--violet" data-aos="fade-up" data-aos-duration="1000">
                 <div class="p-content02__heading">
                     <p>パフォーマンスを上げたい方に</p>
                     <img src="<?= resource('img', 'raw/sect_5-svg-skywater.svg') ?>" alt="">
@@ -631,7 +631,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                     </div>
                 </div>
             </div>
-            <div class="p-content02 p-content02--pink">
+            <div class="p-content02 p-content02--pink" data-aos="fade-up" data-aos-duration="1000">
                 <div class="p-content02__heading">
                     <p>コンディションが気になる方に</p>
                     <img src="<?= resource('img', 'raw/sect_5-svg-skywater.svg') ?>" alt="">
@@ -805,7 +805,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
             </p>
         </div>
     </div>
-    <div class="p-content01">
+    <div class="p-content01" data-aos="fade-up" data-aos-duration="1000">
         <div class="l-wrap">
             <div class="p-content01__main">
                 <div class="p-content01__row">
@@ -847,7 +847,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
 <section class="sect_7" id="sect_7">
     <div class="l-wrap">
         <div class="sect_7__main_content">
-            <div class="content01">
+            <div class="content01" data-aos="fade-up" data-aos-duration="1000">
                 <div class="row">
                     <p class="col1">暑さには、発汗対策を忘れずに。</p>
                     <div class="col2">
@@ -857,7 +857,7 @@ includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' =
                     <img src="<?= resource('img', 'raw/sect_7-img01.png') ?>" alt="">
                 </div>
             </div>
-            <div class="content02">
+            <div class="content02" data-aos="fade-up" data-aos-duration="1000">
                 <img class="u-d-n-responsive" src="<?= resource('img', 'raw/sect_7-img02.png') ?>" alt="">
                 <img class="u-d-n-laptop" src="<?= resource('img', 'raw/sect_7-img02-sp.png') ?>" alt="">
             </div>

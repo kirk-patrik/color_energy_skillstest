@@ -100,6 +100,7 @@
         letter-spacing: 0.03em;
         font-weight: 700;
         margin-bottom: 33px;
+        font-family: 'Zen Maru Gothic', sans-serif;
         @include is-responsive {
           @include font-line(24, 48);
           text-align: center;
@@ -134,6 +135,7 @@
         .paragraph {
           max-width: 379px;
           & p:first-child {
+            font-family: 'Zen Maru Gothic', sans-serif;
             @include font-line(16, 28);
             letter-spacing: 0.02em;
             font-weight: 700;
@@ -208,7 +210,7 @@
         font-weight: 700;
         letter-spacing: 0.06em;
         position: relative;
-        font-family: Zen Maru Gothic;
+        font-family: 'Zen Maru Gothic', sans-serif;
         @include is-responsive {
           @include font-line(14, 14);
         }
@@ -380,7 +382,7 @@
                 }
                 & div:last-child {
                   p {
-                    font-family: Quicksand;
+                    font-family:'Quicksand', sans-serif;
                     text-align: right;
                   }
                 }
@@ -465,7 +467,7 @@
               @include font-line(16, 23);
               letter-spacing: 0.04em;
               font-weight: 700;
-              font-family: Zen Maru Gothic;
+              font-family: 'Zen Maru Gothic', sans-serif;
               @include is-responsive {
                 @include font-line(12, 17);
               }
@@ -627,7 +629,7 @@
     .para01,
     .para02 {
       p {
-        font-family: Zen Maru Gothic;
+        font-family: 'Zen Maru Gothic', sans-serif;
         font-weight: 700;
       }
     }
@@ -782,7 +784,7 @@
         & p:last-child {
           @include font-line(52, 26);
           letter-spacing: 0.01em;
-          font-family: Quicksand;
+          font-family:'Quicksand', sans-serif;
           font-weight: 600;
           @include is-max(1200px) {
             font-size: 46px;
