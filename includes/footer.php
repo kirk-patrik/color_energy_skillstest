@@ -3,15 +3,25 @@
     <footer class="page__footer <?= isset($addClassFooter) ?  $addClassFooter : ''; ?>">
         <div class="l-footer">
             <ul class="l-footer__links">
-                <li>ITEM</li>
+                <li class="l-footer__links-item">
+                    <a href="#">個人情報保護方針</a>
+                </li>
                 <span class="separator"></span>
-                <li>ITEM</li>
+                <li class="l-footer__links-item">
+                    <a href="#">このサイトについて</a>
+                </li>
                 <span class="separator"></span>
-                <li>ITEM</li>
+                <li class="l-footer__links-item">
+                    <a href="#">ソーシャルメディアポリシー</a>
+                </li>
                 <span class="separator"></span>
-                <li>ITEM</li>
+                <li class="l-footer__links-item">
+                    <a href="#">ソーシャルメディア規約</a>
+                </li>
                 <span class="separator"></span>
-                <li>ITEM</li>
+                <li class="l-footer__links-item">
+                    <a href="#">クラシエグループサイトマップ</a>
+                </li>
             </ul>
             <p class="copyright">Copyright &copy; Kracie Holdings,Ltd. All Rights Reserved.</p>
             <span class="scrollTop"></span>

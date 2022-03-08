@@ -26,7 +26,7 @@
     position: relative;
     background: transparent;
     z-index: 99;
-    @include is-min(1400px) {
+    @include is-min(1600px) {
       height: 326.2px;
     }
     @include is-responsive {
@@ -55,6 +55,9 @@
       left: 0;
       width: 100%;
       height: 100%;
+      @include is-max(1600px) {
+        height: 255.2px;
+      }
       @include is-responsive {
         background: url(../tiny/raw/header-bg01-sp2.svg) no-repeat;
         background-size: cover;
