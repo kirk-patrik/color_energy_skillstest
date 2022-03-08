@@ -26,10 +26,7 @@
     position: relative;
     background: transparent;
     z-index: 99;
-    @include is-min(1600px) {
-      height: 326.2px;
-    }
-    @include is-min(1300px) {
+    @include is-min(1400px) {
       height: 326.2px;
     }
     @include is-responsive {
