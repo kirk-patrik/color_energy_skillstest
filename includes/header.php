@@ -29,7 +29,7 @@
 <body class="page">
     <header class="l-header page__top">
         <div class="l-header__top">
-            <h1 class="logo">LOGO</h1>
+            <img src="<?= resource('img', 'raw/logo.png'); ?>" alt="">
         </div>
         <div class="l-header__nav">
             <div class="l-wrap">
