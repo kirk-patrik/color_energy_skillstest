@@ -76,27 +76,32 @@
                 <li></li>
             </ul>
             <ul class="l-header__nav_menu l-header__nav_menu-sp">
-                <li class="nav_item">
-                    <a href="#">4つの特徴</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">#疲労感軽減ルーティン</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">タイプ別診断</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">選べる3タイプ</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">Q&A</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">お問い合わせ</a>
-                </li>
+                <div class="l-header__nav_menu-sp-inner">
+                    <li class="nav_item">
+                        <a href="#">4つの特徴</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">#疲労感軽減ルーティン</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">タイプ別診断</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">選べる3タイプ</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">Q&A</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">お問い合わせ</a>
+                    </li>
+                </div>
             </ul>
         </div>
         <div class="l-header__mainVisual">
+            <a href="#" class="c-line__scroll u-d-n-responsive">
+                <span class="c-line__txt">Scroll</span>
+            </a>
             <div class="l-header__row">
                 <img class="multi-skywater u-d-n-responsive" src="<?= resource('img', 'raw/sect_1-img.png') ?>" alt="">
                 <div class="l-header__col">
