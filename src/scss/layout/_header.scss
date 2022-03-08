@@ -31,7 +31,8 @@
     }
     @include is-responsive {
       margin-top: 45px;
-      height: 70.2px;
+      // height: 70.2px;
+      height: 88.2px;
       position: fixed;
       z-index: 99;
       &::before {
@@ -59,10 +60,10 @@
         height: 255.2px;
       }
       @include is-responsive {
-        background: url(../tiny/raw/header-bg01-sp2.svg) no-repeat;
+        background: url(../tiny/raw/header-bg01-sp2.png) no-repeat;
         background-size: cover;
         background-position: 50%;
-        height: 22vw;
+        height: 25vw;
       }
     }
     &_menu {
